@@ -1,3 +1,10 @@
+\section{Complexity theory}
+\label{sec:complexity}
+``One way to explain the complexity and unpredictability of historical systems, despite their ultimate determinacy, is to note that long chains of causation may separate final effects from ultimate causes lying outside the domain of that field of science.''
+\begin{flushright}
+--- \textit{Jared Diamond}~\cite{diamond1999guns}
+\end{flushright}
+
 \subsection{Complex systems}
 \label{sec:characteristics}
 %“Summary: What are complex systems”

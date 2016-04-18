@@ -7,10 +7,6 @@
 \end{figure*}
 
 
-\section{Complexity theory}
-\label{sec:complexity}
-\input{\filenamebase.complexity}
-
 \section{Research questions, concepts and propositions}
 \label{sec:question}
 \subsection{Interlocking directorates}
@@ -45,6 +41,7 @@ we will focus on the city level for the rest of the manuscript.
 
 
 \subsection{Product-service space}
+\label{sec:pss}
 Cities and countries evolve economically (develop) by moving from producing simple products and services to specializing in more expensive ones -- a process referred to as `structural transformation'~\citep{smith1776, Romer1991,grossman1991,hidalgo2007}.
 This transformation can be explained using differences in productive factors and technology (see ~\citep{hausmann2011} for a review).
 In order to connect these differences to development, 
@@ -105,6 +102,7 @@ In a first step, we will test if interlocks affect the diffusion process in the 
 In a second step, we will analyze collaboration between companies using patent data to show if this diffusion process is mediated (at least partially) by innovation.
 
 \subsubsection{Interlocks affect the PSS}
+\label{sec:interlockspss}
 %[Research subquestion herere]
 Figure ~\ref{fig:entropy} shows our approach. 
 Given the number of companies in city A at time t (Fig. ~\ref{fig:entropy}A), 
@@ -129,6 +127,9 @@ Our research question here is then ``To what extent do interlocks increase the d
 One method to study if interlocks are predictors of the diffusion process is conditional entropy $H(X|Y)$.
 The conditional entropy  $H(Companies_{t_1}|Companies_{t_0})$ quantifies how much information we need to define the structure of the network at time 1 knowing the structure at time 0. 
 If the network of interlocks between sectors affect the network we will find that $H(Companies_{t_1}|Companies_{t_0},Interlocks_{t_0}) < H(Companies_{t_1}|Companies_{t_0})$.
+Other methods include using generative models such as ERGMs [ref] or SIENA [ref] to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t_1}$
+better than for $Companies_{t_0}$.
+Such a models allow to control for node attributes (see below) and also for network effects (transitivity, homophily, etc.).
 
 
 There are several problems with this approach.
@@ -144,13 +145,22 @@ we would find a false effect of interlocks on the diffusion process.
 For example, cities that are developing fast (for whatever reason) may attract more interlocks than those who are not developing.
 In order to investigate this possibility, we need to control for city economic indicators, such as infrastructure, resources, education, population density.
 Other variables to control are sector size, number of companies, country indicators and type of interlocks (within city vs between cities).
-We can create random models using the product-service space and these variables to investigate their effect
+We can create random models using the product-service space and these variables to investigate their effect.
+Importantly, this approach allow us not only to discover if interlocks play a role in the diffusive process, 
+but also to unravel which other factors also play a role in it.
 
 \subsubsection{Interlocks affect the company space (at least) through innovation}
 The subquestion corresponding to this subsection is ``Do interlocks foster collaboration between companies and innovation?''.
-%In the case of , 
-%- Innovation has become one of the key strategies of the firm for gaining competitive advantage (Hitt et al., 1996), expanding market share (Franko, 1989) and increasing firm performance (Morbey, 1988
-
+Innovation has been linked to gaining competitive advantage~\citep{Hitt1996}, expanding market share ~\citep{Franko1989} and increasing firm performance~\citep{Morbey1988}.
+Thus, a correlation in section~\ref{sec:pss} between the product-service space and innovation would not be surprising. 
+In section~\ref{sec:interlockspss}, we investigate if interlocks affect the diffusive process in the product-service space.
+In this section, we hypothesize that the effect of interlocks in the diffusive process is caused at least partially by an improvement in collaboration and innovation.
+Thus, the correlation between the product-service space and innovation is (at least partially) a result of the interlocks.
+In order to test this hypothesis we will use patent data.
+Similarly to the interlock case, two companies are connected if they share a patent.
+We can use generative models such as ERGMs or SIENA to assess if the presence of interlocks at time $t$ facilitates the presence of a shared patent at time $t+1$. 
+Since we expect other factors to affect the probability of collaboration (such as the presence of a university in the city),
+we would need to control for those factors (see ~\ref{sec:interlockspss}).
 
 
 \subsection{Which factors affect interlocks}
@@ -158,7 +168,7 @@ The subquestion corresponding to this subsection is ``Do interlocks foster colla
 The literature for the factors influencing interlock creation is more consistent.
 Geographical distance, colony history, language, education and social networks have been pointed as factors
 influencing the presence of interlocks [refs].
-Time allowing, we will explore this idea at the micro-scale using generative models such as ERGMs,
+Time allowing, we will explore this idea at the micro-scale using generative models such as ERGMs [ref] or SIENA [ref],
 which allow to control for network effects such as transitivity -- i.e. the probability that there is an interlock A--C if there are interlocks A--B and B--C is increased, and should be controlled.
 
 

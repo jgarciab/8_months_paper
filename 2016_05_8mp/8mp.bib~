@@ -146,7 +146,7 @@ year = {2010}
 
 
 @article{Allen1974,
-abstract = {Interorganizational elite cooptation, in the form of interlocking corporate directorates, is viewed as a cooperative strategy between economic organizations for reducing sources of uncertainty in their environments. Specifically, corporate interlocking is a means of anticipating or controlling sources of uncertainty stemming from the potentially disruptive unilateral actions of other corporations. In order to examine the relevant hypotheses, two comparable samples are constructed comprising the 200 largest nonfinancial and the 50 largest financial corporations as ranked by their assets for the periods 1935 and 1970. As hypothesized, the size of a corporation is directly related to the frequency of interlocking in general, even controlling for the size of its directorate. Also, financial corporations maintain more interlocks in general than nonfinancial corporations due to the importance of capital as a resource. Contrary to the theory, there is no clear relationship between such organizational characteristics as capital intensity and growth and the frequency of interlocking with financial corporations; moreover, there is even a significant negative relationship between dependency on external debt obligations and frequency of financial interlocking. As hypothesized, corporations with local market environments maintain a greater proportion of their interlocks at the local level than other corporations. Also, the structure of corporate interlocking has become more diffuse through time with a smaller proportion of the interlocks being maintained at the local level. However, contrary to the theory, the frequency of interlocking with financial corporations has increased rather than decreased through time.},
+abstract = {Interorganizational elite cooptation, in the form of interlocking corporate directorates, is viewed as a cooperative strategy between economic organizations for reducing sources of uncertainty in their environments. Specifically, corporate interlocking is a means of anticipating or controlling sources of uncertainty stemming from the potentially disruptive unilateral actions of other corporations. In order to examine the relevant hypotheses, two comparable samples are constructed comprising the 200 largest nonfinancial and the 50 largest financial corporations as ranked by their assets for the periods 1935 and 1970. As hypothesized, the size of a corporation is directly related to the frequency of interlocking in general, even controlling for the size of its directorate. Also, financial corporations maintain more interlocks in general than nonfinancial corporations due to the importance of capital as a resource. Contrary to the theory, there is no clear relationship between such organizational characteristics as capital intensity and growth and the frequency of interlocking with financial corporations; moreover, there is even a significant negative relationship between dependency on external debt obligations and frequency of financial interlocking. As hypothesized, corporations with local market environments maintain a greater proportion of their interlocks at the local level than other corporations. Also, the structure of corporate interlocking has become more diffuse through time with a smaller proportion of the interlocksbeing maintained at the local level. However, contrary to the theory, the frequency of interlocking with financial corporations has increased rather than decreased through time.},
 author = {Allen, Michael Patrick},
 journal = {American Sociological Review},
 doi = {10.2307/2094297},
@@ -284,26 +284,6 @@ volume = {4},
 year = {2006}
 }
 
-
-@article{Mercken2010,
-abstract = {The mutual influence of smoking behavior and friendships in adolescence is studied. It is attempted to disentangle influence and selection processes in reciprocal and non-reciprocal friendships. An actor-based model is described for the co-evolution of friendship networks and smoking behavior. This model considers alternative selection and influence mechanisms, and models continuous-time changes in network and behavior. The data consists of a longitudinal sample of 1326 Finnish adolescents in 11 high schools. Findings suggest that selection as well as influence processes play an important role in adolescent smoking behavior. Selection had a relatively stronger role than influence, in particular when selecting non-reciprocal friends. The strength of both influence and selection processes decreased over time. © 2009 Elsevier B.V. All rights reserved.},
-author = {Mercken, L. and Snijders, T. A B and Steglich, C. and Vartiainen, E. and de Vries, H.},
-doi = {10.1016/j.socnet.2009.02.005},
-file = {:home/javiergb/Downloads/2010-MerckenL-Dynamics.pdf:pdf},
-isbn = {0378-8733},
-issn = {03788733},
-journal = {Social Networks},
-keywords = {Adolescents,Friends,Influence,Reciprocity,Selection,Siena,Smoking},
-mendeley-groups = {2016-01-8-month-papers},
-number = {1},
-pages = {72--81},
-pmid = {47610394},
-publisher = {Elsevier B.V.},
-title = {{Dynamics of adolescent friendship networks and smoking behavior}},
-url = {http://dx.doi.org/10.1016/j.socnet.2009.02.005},
-volume = {32},
-year = {2010}
-}
 
 
 
