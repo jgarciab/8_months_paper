@@ -1,15 +1,43 @@
 \begin{thebibliography}{10}
 
-\bibitem{Lenin1999}
+\bibitem{jeidels1905}
+O.~Jeidels.
+\newblock {\em Das Verh{\"a}ltnis der deutschen Grossbanken zur Industrie: mit
+  besonderer Ber{\"u}cksichtigung der Eisenindustrie}, volume~24.
+\newblock Duncker \& Humblot, 1905.
+
+\bibitem{Lenin1917}
 V.~I. Lenin.
-\newblock {\em {Imperialism: the highest stage of capitalism}}, volume~1.
-\newblock 1999.
+\newblock volume~1.
+\newblock Zhizn' i znanie, 1917.
 
 \bibitem{Mizruchi1996}
 M.~S. Mizruchi.
 \newblock {What Do Interlocks Do? An Analysis, Critique, and Assessment of
   Research on Interlocking Directorates}.
 \newblock {\em Annual Review of Sociology}, 22(1):271--298, 1996.
+
+\bibitem{hidalgo2007}
+C.~A. Hidalgo, B.~Klinger, A.-L. Barabasi, and R.~Hausmann.
+\newblock {The Product Space Conditions the Development of Nations}.
+\newblock {\em Science}, 317(5837):482--487, 2007.
+
+\bibitem{hausmann2011}
+R.~Hausmann and C.~A. Hidalgo.
+\newblock The network structure of economic output.
+\newblock {\em Journal of Economic Growth}, 16(4):309--342, 2011.
+
+\bibitem{Hausmann2006}
+R.~Hausmann and B.~Klinger.
+\newblock {Structural Transformation and Patterns of Comparative Advantage in
+  the Product Space Ricardo}.
+\newblock {\em Faculty Research Working Papers Series Structural}, 2006.
+
+\bibitem{hidalgo2009}
+C.~A. Hidalgo and R.~Hausmann.
+\newblock {The building blocks of economic complexity}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  106(26):10570--10575, jun 2009.
 
 \bibitem{anderson1972}
 P.~W. Anderson et~al.
@@ -46,28 +74,6 @@ D.~J. Watts.
 \newblock {\em The collective dynamics of belief}.
 \newblock Stanford University Press, 2007.
 
-\bibitem{Hausmann2006}
-R.~Hausmann and B.~Klinger.
-\newblock {Structural Transformation and Patterns of Comparative Advantage in
-  the Product Space Ricardo}.
-\newblock {\em Faculty Research Working Papers Series Structural}, 2006.
-
-\bibitem{hidalgo2007}
-C.~A. Hidalgo, B.~Klinger, A.-L. Barabasi, and R.~Hausmann.
-\newblock {The Product Space Conditions the Development of Nations}.
-\newblock {\em Science}, 317(5837):482--487, 2007.
-
-\bibitem{hidalgo2009}
-C.~A. Hidalgo and R.~Hausmann.
-\newblock {The building blocks of economic complexity}.
-\newblock {\em Proceedings of the National Academy of Sciences},
-  106(26):10570--10575, jun 2009.
-
-\bibitem{hausmann2011}
-R.~Hausmann and C.~A. Hidalgo.
-\newblock The network structure of economic output.
-\newblock {\em Journal of Economic Growth}, 16(4):309--342, 2011.
-
 \bibitem{Granovetter1973}
 M.~Granovetter.
 \newblock {The Strength of Weak Ties}.
@@ -78,16 +84,16 @@ A.~Clauset, S.~Arbesman, and D.~B. Larremore.
 \newblock {Systematic inequality and hierarchy in faculty hiring networks}.
 \newblock {\em Science Advances}, 1(1):e1400005--e1400005, 2015.
 
-\bibitem{tetlock2005}
-P.~Tetlock.
-\newblock {\em Expert political judgment: How good is it? How can we know?}
-\newblock Princeton University Press, 2005.
-
 \bibitem{corisk2009}
 I.~W{\"a}hrungsfonds.
 \newblock Global financial stability report--responding to the financial crisis
   and measuring systemic risk.
 \newblock {\em April, Washington, DC}, 2009.
+
+\bibitem{tetlock2005}
+P.~Tetlock.
+\newblock {\em Expert political judgment: How good is it? How can we know?}
+\newblock Princeton University Press, 2005.
 
 \bibitem{schelling2006}
 T.~C. Schelling.
@@ -111,15 +117,17 @@ L.~Mercken, T.~A.~B. Snijders, C.~Steglich, E.~Vartiainen, and H.~de~Vries.
 \newblock {Dynamics of adolescent friendship networks and smoking behavior}.
 \newblock {\em Social Networks}, 32(1):72--81, 2010.
 
-\bibitem{mills1957}
-C.~W. Mills.
-\newblock JSTOR, 1957.
-
 \bibitem{Belderbos2014}
 R.~Belderbos, S.~Du, and D.~Somers.
 \newblock {Global Cities as Innovation Hubs: The Location of R{\&}D investments
   by Multinational Firms}.
 \newblock page~30, 2014.
+
+\bibitem{Heemskerk2016}
+E.~M. Heemskerk, F.~W. Takes, J.~Garcia-Bernardo, and M.~J. Huijzer.
+\newblock {Where is the global corporate elite? A large-scale network study of
+  local and nonlocal interlocking directorates}.
+\newblock {\em Acta Sociologica}, Forthcomin, 2016.
 
 \bibitem{smith1776}
 A.~Smith and M.~Garnier.
@@ -157,7 +165,19 @@ G.~K. Morbey.
 \newblock {\em The Journal of Product Innovation Management}, 5(3):191--200,
   1988.
 
-\bibitem{Note2}
-\protect \url {https://github.com/uvacorpnet}.
+\bibitem{mills1957}
+C.~W. Mills.
+\newblock JSTOR, 1957.
+
+\bibitem{fukunaga1975}
+K.~Fukunaga and L.~D. Hostetler.
+\newblock The estimation of the gradient of a density function, with
+  applications in pattern recognition.
+\newblock {\em Information Theory, IEEE Transactions on}, 21(1):32--40, 1975.
+
+\bibitem{Kossinets2006}
+G.~Kossinets.
+\newblock {Effects of missing data in social networks}.
+\newblock {\em Social Networks}, 28(3):247--268, 2006.
 
 \end{thebibliography}

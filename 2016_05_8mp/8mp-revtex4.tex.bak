@@ -18,6 +18,9 @@
 
 %% load in root name
 \usepackage{currfile}
+\usepackage{lipsum}  
+\usepackage{enumitem}
+
 \input{\currfilebase.settings}
 \input{\filenamebase.settings}
 
@@ -35,7 +38,7 @@
 
 \input{\filenamebase.author}
 
-\date{\today}
+%\date{\today}
 
 \begin{abstract}
   \protect

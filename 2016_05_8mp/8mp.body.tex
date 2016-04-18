@@ -1,42 +1,53 @@
-\begin{figure*}
-\begin{center}
-\includegraphics[width=.7\textwidth]{fig1.png}
-\end{center}
-\caption{Global network of interlocking directorates. Color indicates communities -- i.e. cities that do business together within each other more often than with others.}
-\label{fig:fig1}
-\end{figure*}
 
 
 \section{Research questions, concepts and propositions}
 \label{sec:question}
 \subsection{Interlocking directorates}
-An important concept in this paper is `interlocking directorates'. An interlock corresponds to the link that is formed between two companies when a director affiliated with one organization sits on the board of directors of another organization ~\citep{Mizruchi1996}, or when two director from two firms sit together on the board of directors of a third firm. Importantly, while the interlock is a relationship between companies, it is created by individuals sitting in boards. This allows us to model the system as a bipartite (two-mode) network, and to analyze at the same time the importance of both companies and directors.
+Companies are embedded in complex networks of `interlocking directorates', 
+created when directors from a corporation sit on multiple boards.
+The relationship between two corporations created when a director sits in both of their boards is often referred to as a direct interlock~\citep{Mizruchi1996}.
+Interlocks can also be indirect,
+when two director from two firms sit together on the board of directors of a third firm. 
+Several explanations (micro-motives) have been pointed out for the creation of interlocks. 
+These include facilitating cooperation to limit competition (collusion),  
+absorption of potentially disruptive elements (cooptation), 
+creating legitimacy by hiring respectable directors, 
+career advancement, and social cohesion~\citep{Mizruchi1996}.
 
-The concept of interlocking directorates is related to the corporate elite, part of the power elite. Mills~\cite{mills1957} defined the power elite as \textit{``those political, economic, and military circles, which as an intricate set of overlapping small but dominant groups share decisions having at least national consequences. Insofar as national events are decided, the power elite are those who decide them''}~\citep{mills1957}. Moreover, Mills determined that there is an `inner core' of the power elite involving individuals that are able to move from one seat of institutional power to another. In the context of corporations, this inner core corresponds to the corporate elite. A strength of using the concept of interlocking directorates as opposed to corporate elites is that we do not assume a priori characteristics of the elite. Corporate elites on the interlock network are the actors with high centralities values, as measured by network algorithms.
-
-The effects of interlocks (or by extension the corporate elites) are still object to controversy. 
-In the past decades, tens of papers have investigated the effect of interlocks in firm performance, innovation, acquisitions, mergers, capital growth, firm reputation, and adoption of structures and strategies (see for example review ~\cite{Mizruchi1996}).
+Although the micro-motives for the existence of interlocks are relatively well understood, 
+their effects are still object to controversy. 
+In the past decades, many papers have investigated the effect of interlocks in firm performance [ref], innovation [ref], acquisitions [ref], mergers [ref], capital growth [ref], firm reputation [ref], and adoption of structures and strategies [ref]. See Mizruchi~\cite{Mizruchi1996} for a review.
 However, only the spread of structures and strategies has been consistently associated to interlocks [refs].
-We attribute this to bias to limitations in the data analysis.
+We attribute this to limitations in the data analysis.
 Previous papers have focused on a small number of top companies (10--1000), 
 many times restricting the study to only one sector or country. 
 The result of this approach in a complex network is a misrepresentation of local patterns as the global patterns.
-For instance, Mizruchi~\cite{Mizruchi1996} points out that if directors are appointed when the productivity of the firm is low (as a form of monitoring),
-and directors decide to join boards that are performing well (as a form of career development),
-the end result would be an inverted U shaped relationship between number of interlocks and firm performance. 
-This model would explain why researchers [refs] have found positive and negative relationship between interlocks and performance,
+For example, 
+[this example with this data, ref] found that the presence of interlocks increases firm growth.
+At the same time,
+[this example with this other data, ref] found that the presence of interlocks decreases firm performance.
 
-In order to bring definite answers to the field we will study a large dataset comprising 200 million companies and 100 million directors (see \ref{sec:data}).
-Our main research question is ``How is the interlocking directorates network structured in time and space, and what is their effect on investment and innovation''.
-For the sake of brevity, we will focus here on the second part of the question ``what is the effect of interlocks on investment and innovation''. 
-First, we will explore the concept of the product-service space (PSS), 
-that determines how closely two sectors are depending on how many cities have companies in both sectors.
+
+% simple explanation by Mizruchi~\cite{Mizruchi1996} that 
+%For instance,  points out that if directors are appointed when the productivity of the firm is low (as a form of monitoring),
+%and directors decide to join boards that are performing well (as a form of career development),
+%the end result would be an inverted U shaped relationship between number of interlocks and firm performance. 
+%This model would explain why researchers [refs] have found positive and negative relationship between interlocks and performance,
+
+
+We will study a large dataset comprising 200 million companies and 100 million directors (see \ref{sec:data}) to bring definitive answers to the field .
+Our main research question is ``How is the interlocking directorates network structured in time and space, and what is their effect on structural transformation?''.
+For the sake of brevity, we focus here on the second part of the question ``what is the effect of interlocks on structural transformation?'',
+where structural transformation corresponds to the evolution of the distribution of economic activities within the city.
+In section \ref{sec:pss} we explore the concepts of structural transformation and the product-service space (PSS), 
+that determines how closely two economic activities (sectors) are depending on how many cities have companies in both sectors.
 Economical development has been showed to depend on this concept~\citep{hidalgo2009}.
-Secondly, we will determine how interlocks affect the evolution of the distribution of sectors within the city.
-Thirdly, we will show what factors influence the presence of interlocks.
+In section \ref{sec:interlockspss}, we determine if (and if so, how) interlocks affect structural transformation.
+Section \ref{sec:factors} shows what factors influence the presence of interlocks.
 Our unit of analysis can be the company itself, the city, the country or the region. 
-For clarity, because cities have became innovation hubs~\citep{Belderbos2014}, 
-and because we do not want to impose a national structure on the data,
+For clarity of this paper, 
+because cities have became innovation hubs~\citep{Belderbos2014}, 
+and because we should not impose a national structure on interlock data~\citep{Heemskerk2016},
 we will focus on the city level for the rest of the manuscript.
 
 
@@ -59,7 +70,7 @@ Furthermore, they proved that structural transformation at the country level occ
 where two products are related if they are closed in the `product space'.
 
 In a world full of multi-nationals, innovation is happening at the city level~\citep{Belderbos2014}.
-We adapt the `product-space' concept by focusing at relationships between company sectors at the city level,
+We adapt the `product-space' concept by focusing at relationships between economic activities at the city level,
 instead of product categories at the country level.
 Using cities allows us to explore not only products, but also services, thus we will define the `product-service space' (PSS). 
 Moreover, focusing on city abstract for economic growth due to the number of companies in the city.
@@ -71,7 +82,7 @@ and maybe with innovation, for which we can use the Innovation index \footnote{\
 or the number of patterns.
 The causal argument is symmetrical from Hidalgo, Hausman and Klinger's argument~\cite{hidalgo2007, hausmann2011, Hausmann2006,hidalgo2009} but at the city level.
 Cities require some underlying capabilities (infrastructure, education, institutions, human capital) to maintain specific companies,
-and those capabilities are similar for sectors close together in the product-service space.
+and those capabilities are similar for economic activities close together in the product-service space.
 When a city acquire new capabilities, new products can be developed along the product-service space.
 However, we are more interesting in understanding the role of interlocks in the process, 
 thus we only intent to hint on causality.
@@ -84,13 +95,14 @@ where the benefit of having `in situ' capabilities is minimal.
 
 
 \subsection{Interlocks and the PSS}
+\label{sec:interlockspss}
 %[Research subquestion herere]
-We will analyze if interlocks are a predictor of diffusion between sectors in cities. 
+We will analyze if interlocks are a predictor of diffusion between economic activities in cities. 
 Development itself influences the presence of interlocks.
 Companies situated close geographically, or in places with similar language or colonial ties 
 have greater chances to interlock [refs].
 Since the establishment of companies in the city allow for greater possibilities of interlocks,
-we expect a relationship between the PSS and the number of interlocks between sectors.
+we expect a relationship between the PSS and the number of interlocks between economic activities.
 However it is not clear if interlocks are only a cause of development but also an effect.
 Interlocks provide a communication channel between companies, 
 and serve as a link for the spread of strategies and structures (refs).
@@ -102,14 +114,13 @@ In a first step, we will test if interlocks affect the diffusion process in the 
 In a second step, we will analyze collaboration between companies using patent data to show if this diffusion process is mediated (at least partially) by innovation.
 
 \subsubsection{Interlocks affect the PSS}
-\label{sec:interlockspss}
 %[Research subquestion herere]
 Figure ~\ref{fig:entropy} shows our approach. 
 Given the number of companies in city A at time t (Fig. ~\ref{fig:entropy}A), 
 we want to explain the evolution to time t+1 (Fig. ~\ref{fig:entropy}B).
 ~\cite{hidalgo2009} showed that this evolution (at the country level) is related to the `product space' (Fig. ~\ref{fig:entropy}C).
 We can create a network of interlocks (Fig. ~\ref{fig:entropy}C),
-where two sectors are connected if a director sits in companies from both sectors.
+where two economic activities are connected if a director sits in companies from both sectors.
 Importantly, the network of interlocks have relationships between sectors that are not present in Figure ~\ref{fig:entropy}A. 
 This because interlocks are not restricted to the city itself.
 A director can sit in the banking sector in city A and in the IT sector in city B, even if there are no IT companies in city A.
@@ -126,18 +137,17 @@ Our research question here is then ``To what extent do interlocks increase the d
 
 One method to study if interlocks are predictors of the diffusion process is conditional entropy $H(X|Y)$.
 The conditional entropy  $H(Companies_{t_1}|Companies_{t_0})$ quantifies how much information we need to define the structure of the network at time 1 knowing the structure at time 0. 
-If the network of interlocks between sectors affect the network we will find that $H(Companies_{t_1}|Companies_{t_0},Interlocks_{t_0}) < H(Companies_{t_1}|Companies_{t_0})$.
+If the network of interlocks between economic activities affect the network we will find that $H(Companies_{t_1}|Companies_{t_0},Interlocks_{t_0}) < H(Companies_{t_1}|Companies_{t_0})$.
 Other methods include using generative models such as ERGMs [ref] or SIENA [ref] to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t_1}$
 better than for $Companies_{t_0}$.
 Such a models allow to control for node attributes (see below) and also for network effects (transitivity, homophily, etc.).
-
 
 There are several problems with this approach.
 Firstly, we have explained that development creates interlocks (endogeneity problem).
 The use of longitudinal data allows us to quantify the effect of interlocks on development,
 independently of the effect of development on interlocks.
 Secondly, there is a chance of self-selection bias.
-Companies that want to develop to a new sector may create interlocks with that sector beforehand.
+Companies that want to develop a product in another sector may create interlocks with a company from economic activity beforehand.
 However, if this is true, interlocks would also facilitate diffusion.
 Finally, a most important bias is omitted variable bias.
 If there is an underlying mechanism that produces the interlock at $time_1$ and the diffusion at $time_2$, 
@@ -148,6 +158,7 @@ Other variables to control are sector size, number of companies, country indicat
 We can create random models using the product-service space and these variables to investigate their effect.
 Importantly, this approach allow us not only to discover if interlocks play a role in the diffusive process, 
 but also to unravel which other factors also play a role in it.
+
 
 \subsubsection{Interlocks affect the company space (at least) through innovation}
 The subquestion corresponding to this subsection is ``Do interlocks foster collaboration between companies and innovation?''.
@@ -179,4 +190,5 @@ The data allow for the exploration of other projects, such as:
 (iii) Quantify the independence of a given sector (e.g. food).
 (iv) Measure the transference of power from domestic corporation to transnational corporations.
 (v) Network motifs, which combination of interlocks between sectors are more likely than random.
-
+(vi) (Lack of) independence of media or food sectors across regions,
+(vii) Importance of the nation-state in economic networks
