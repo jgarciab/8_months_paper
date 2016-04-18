@@ -115,6 +115,12 @@ L.~Mercken, T.~A.~B. Snijders, C.~Steglich, E.~Vartiainen, and H.~de~Vries.
 C.~W. Mills.
 \newblock JSTOR, 1957.
 
+\bibitem{Belderbos2014}
+R.~Belderbos, S.~Du, and D.~Somers.
+\newblock {Global Cities as Innovation Hubs: The Location of R{\&}D investments
+  by Multinational Firms}.
+\newblock page~30, 2014.
+
 \bibitem{smith1776}
 A.~Smith and M.~Garnier.
 \newblock {\em An Inquiry into the Nature and Causes of the Wealth of Nations}.
@@ -130,11 +136,9 @@ G.~M. Grossman and E.~Helpman.
 \newblock Quality ladders in the theory of growth.
 \newblock {\em The Review of Economic Studies}, 58(1):43--61, 1991.
 
-\bibitem{Belderbos2014}
-R.~Belderbos, S.~Du, and D.~Somers.
-\newblock {Global Cities as Innovation Hubs: The Location of R{\&}D investments
-  by Multinational Firms}.
-\newblock page~30, 2014.
+\bibitem{Note1}
+\protect \url
+  {http://www.innovation-cities.com/innovation-cities-index-2015-global/9609}.
 
 \bibitem{Allen1974}
 M.~P. Allen.
@@ -142,7 +146,7 @@ M.~P. Allen.
   Corporate Directorates}.
 \newblock {\em American Sociological Review}, 39(3):393, 1974.
 
-\bibitem{Note1}
+\bibitem{Note2}
 \protect \url {https://github.com/uvacorpnet}.
 
 \end{thebibliography}
