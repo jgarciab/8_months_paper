@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: 8mp-revtex4.aux
+The style file: unsrtabbrv.bst
+Database file #1: 8mp-revtex4Notes.bib
+Warning--entry type for "Note1" isn't style-file defined
+--line 1 of file 8mp-revtex4Notes.bib
+Database file #2: 8mp.bib
+Warning--empty publisher in Lenin1999
+Warning--empty journal in weber1904
+Warning--empty title in mills1957
+Warning--empty journal in Belderbos2014
+You've used 28 entries,
+            1795 wiz_defined-function locations,
+            628 strings with 7079 characters,
+and the built_in function-call counts, 5689 in all, are:
+= -- 517
+> -- 201
+< -- 3
++ -- 81
+- -- 53
+* -- 355
+:= -- 893
+add.period$ -- 81
+call.type$ -- 28
+change.case$ -- 20
+chr.to.int$ -- 0
+cite$ -- 32
+duplicate$ -- 267
+empty$ -- 594
+format.name$ -- 53
+if$ -- 1262
+int.to.chr$ -- 0
+int.to.str$ -- 28
+missing$ -- 34
+newline$ -- 140
+num.names$ -- 27
+pop$ -- 97
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 109
+stack$ -- 0
+substring$ -- 387
+swap$ -- 42
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 58
+width$ -- 30
+write$ -- 289
+(There were 5 warnings)

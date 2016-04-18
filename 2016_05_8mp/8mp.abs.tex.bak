@@ -1,0 +1,33 @@
+\section{Brief description of the project}
+\label{sec:description}
+The study of corporate networks dates back to the beginning of the 20$th$ century~\citep{Lenin1999},
+when researchers noticed increased relationships between banks and industry.
+These relationships were created through the appointment of directors with positions in both industries.
+Nowadays, 25\% of the companies worldwide are connected by shared board directors (interlocks).
+Several explanations (micro-motives) have been pointed out for the creation of such links. 
+The micro-motives include facilitating collusion (cooperate to limit competition), 
+cooptation (absorption of potentially disruptive elements), 
+creating legitimacy by hiring respectable directors, 
+career advancement and social cohesion.
+
+
+The presence of interlocks have been correlated with macro-outcomes, 
+finding contradictory results with profits, and with the effect in merges and takeover~\citep{Mizruchi1996}.
+Only the spread of corporate strategies has been consistently found in the literature~\citep{Mizruchi1996}. 
+The ambiguous results can be attributed to the biased data studied in the past,
+namely a few dozen companies in a particular sector.
+Using data from the Orbis database, 
+comprising 200 million companies and 100 million directors, 
+we will analyze the effects.
+
+Moreover, the fine allows us to study the characteristics of the network without imposing a national character. 
+In this way blablbah (d. In some regions the business communities are organized along
+national borders, whereas in other areas the locus of organization is at the
+city level or international level.) 
+
+
+This research proposal is organized as follows. 
+Firstly we explain the characteristics of the data.
+Secondly we give an overview of complexity methods that can and have been applied to social sciences.
+Thirdly, we provide an overview of the problems (research questions) within the project that can be tackled using complex systems methods.
+Finally, we focus on the propositions, concepts and hypotheses of the project.

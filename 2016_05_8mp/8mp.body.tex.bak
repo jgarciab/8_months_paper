@@ -1,0 +1,270 @@
+\begin{figure*}
+\begin{center}
+\includegraphics[width=.7\textwidth]{fig1.png}
+\end{center}
+\caption{Global network of interlocking directorates. Color indicates communities -- i.e. cities that do business together within each other more often than with others.}
+\label{fig:fig1}
+\end{figure*}
+
+
+\section{Complexity theory}
+\label{sec:complexity}
+\input{\filenamebase.complexity}
+
+\section{Research questions, concepts and propositions}
+\label{sec:question}
+\subsection{Interlocking directorates}
+An important concept in this paper is `interlocking directorates'. An interlock corresponds to the link that is formed between two companies when a director affiliated with one organization sits on the board of directors of another organization ~\citep{Mizruchi1996}, or when two director from two firms sit together on the board of directors of a third firm. Importantly, while the interlock is a relationship between companies, it is created by individuals sitting in boards. This allows us to model the system as a bipartite (two-mode) network, and to analyze at the same time the importance of both companies and directors.
+
+The concept of interlocking directorates is related to the corporate elite, part of the power elite. Mills~\cite{mills1957} defined the power elite as \textit{``those political, economic, and military circles, which as an intricate set of overlapping small but dominant groups share decisions having at least national consequences. Insofar as national events are decided, the power elite are those who decide them''}~\citep{mills1957}. Moreover, Mills determined that there is an `inner core' of the power elite involving individuals that are able to move from one seat of institutional power to another. In the context of corporations, this inner core corresponds to the corporate elite. A strength of using the concept of interlocking directorates as opposed to corporate elites is that we do not assume a priori characteristics of the elite. Corporate elites on the interlock network are the actors with high centralities values, as measured by network algorithms.
+
+The effects of interlocks (or by extension the corporate elites) are still object to controversy. 
+In the past decades, tens of papers have investigated the effect of interlocks in firm performance, innovation, acquisitions, mergers, capital growth, firm reputation, and adoption of structures and strategies (see for example review ~\cite{Mizruchi1996}).
+However, only the spread of structures and strategies has been consistently associated to interlocks [refs].
+We attribute this to bias to limitations in the data analysis.
+Previous papers have focused on a small number of top companies (10--1000), 
+many times restricting the study to only one sector or country. 
+The result of this approach in a complex network is a misrepresentation of local patterns as the global patterns.
+For instance, Mizruchi~\cite{Mizruchi1996} points out that if directors are appointed when the productivity of the firm is low (as a form of monitoring),
+and directors decide to join boards that are performing well (as a form of career development),
+the end result would be an inverted U shaped relationship between number of interlocks and firm performance. 
+This model would explain why researchers [refs] have found positive and negative relationship between interlocks and performance,
+
+In order to bring definite answers to the field we will study a large dataset comprising 200 million companies and 100 million directors (see \ref{sec:data}).
+Our main research question is ``How is the interlocking directorates network structured in time and space, and what is their effect on investment and innovation''.
+For the sake of brevity, we will focus here on the second part of the question ``what is the effect of interlocks on investment and innovation''. 
+First, we will explore the concept of the product-service space (PSS), 
+that determines how closely two sectors are depending on how many cities have companies in both sectors.
+Economical development has been showed to depend on this concept~\citep{hidalgo2009}.
+Secondly, we will determine how interlocks affect the evolution of the distribution of sectors within the city.
+Thirdly, we will show what factors influence the presence of interlocks.
+Our unit of analysis can be the company itself, the city, the country or the region. 
+For clarity, because cities have became innovation hubs~\citep{Belderbos2014}, 
+and because we do not want to impose a national structure on the data,
+we will focus on the city level for the rest of the manuscript.
+
+
+\subsection{Product-service space}
+Cities and countries evolve economically (develop) by moving from producing simple products and services to specializing in more expensive ones -- a process referred to as `structural transformation'~\citep{smith1776, Romer1991,grossman1991,hidalgo2007}.
+This transformation can be explained using differences in productive factors and technology (see ~\citep{hausmann2011} for a review).
+In order to connect these differences to development, 
+current models usually abstract from the product themselves and look at macro-economic indicators of productive factors and technology.
+However, development occur when individual new products are created or existing ones improved,
+and it is not clear that his models can explain the variability observed in countries with similar macro-economic indicators.
+Moreover, the products that are developed depend on the current products being produced -- there is a relatedness between products.
+Many explanation have been proposed for this, 
+such as similar institutions, infrastructure, physical factors, technology, or some combination of those factors (see ~\cite{hidalgo2007} for a review).
+Hidalgo, Hausman and Klinger~\cite{hidalgo2007, hausmann2011, Hausmann2006,hidalgo2009} developed the `product space' as a map of the relatedness between products,
+where products are related if countries have competitive advantages respect to both products.
+They showed that the product space capture information about the complexity of the set of capabilities available in a country, 
+is strongly correlated with income per capita and predictive of future growth.
+Furthermore, they proved that structural transformation at the country level occurs by moving from existing products to related products, 
+where two products are related if they are closed in the `product space'.
+
+In a world full of multi-nationals, innovation is happening at the city level~\citep{Belderbos2014}.
+We adapt the `product-space' concept by focusing at relationships between company sectors at the city level,
+instead of product categories at the country level.
+Using cities allows us to explore not only products, but also services, thus we will define the `product-service space' (PSS). 
+Moreover, focusing on city abstract for economic growth due to the number of companies in the city.
+The subquestion here is: ``Does structural transformation at the city follows the product-service space''.
+We expect to find comparable trends at the city level than Hidalgo, Hausman and Klinger found at the country level.
+The structural transformation should follow the edges in the product-service space, 
+and the diffusion process would correlate with gdp per capita in the city, 
+and maybe with innovation, for which we can use the Innovation index \footnote{\url{http://www.innovation-cities.com/innovation-cities-index-2015-global/9609}}
+or the number of patterns.
+The causal argument is symmetrical from Hidalgo, Hausman and Klinger's argument~\cite{hidalgo2007, hausmann2011, Hausmann2006,hidalgo2009} but at the city level.
+Cities require some underlying capabilities (infrastructure, education, institutions, human capital) to maintain specific companies,
+and those capabilities are similar for sectors close together in the product-service space.
+When a city acquire new capabilities, new products can be developed along the product-service space.
+However, we are more interesting in understanding the role of interlocks in the process, 
+thus we only intent to hint on causality.
+Negative results would suggest an extreme globalization of the cities, 
+where the benefit of having `in situ' capabilities is minimal.
+
+
+%We will define the network as $PSS = (V, E)) $, where $V$ are the sectors according to NACE rev. 2 (e.g. C11 = Manufacture of beverages),
+%and $E$ is the matrix of weights between sectors.
+
+
+\subsection{Interlocks and the PSS}
+%[Research subquestion herere]
+We will analyze if interlocks are a predictor of diffusion between sectors in cities. 
+Development itself influences the presence of interlocks.
+Companies situated close geographically, or in places with similar language or colonial ties 
+have greater chances to interlock [refs].
+Since the establishment of companies in the city allow for greater possibilities of interlocks,
+we expect a relationship between the PSS and the number of interlocks between sectors.
+However it is not clear if interlocks are only a cause of development but also an effect.
+Interlocks provide a communication channel between companies, 
+and serve as a link for the spread of strategies and structures (refs).
+For instance, [examples of previous research].
+We hypothesize that interlocks serve as a communication channel for opportunities,
+thus increasing investment and R\&D to sectors close in the PSS.
+The increased investment and innovation has been linked to development~\citep{Romer1991,grossman1991,hidalgo2007}.
+In a first step, we will test if interlocks affect the diffusion process in the PSS.
+In a second step, we will analyze collaboration between companies using patent data to show if this diffusion process is mediated (at least partially) by innovation.
+
+\subsubsection{Interlocks affect the PSS}
+%[Research subquestion herere]
+Figure ~\ref{fig:entropy} shows our approach. 
+Given the number of companies in city A at time t (Fig. ~\ref{fig:entropy}A), 
+we want to explain the evolution to time t+1 (Fig. ~\ref{fig:entropy}B).
+~\cite{hidalgo2009} showed that this evolution (at the country level) is related to the `product space' (Fig. ~\ref{fig:entropy}C).
+We can create a network of interlocks (Fig. ~\ref{fig:entropy}C),
+where two sectors are connected if a director sits in companies from both sectors.
+Importantly, the network of interlocks have relationships between sectors that are not present in Figure ~\ref{fig:entropy}A. 
+This because interlocks are not restricted to the city itself.
+A director can sit in the banking sector in city A and in the IT sector in city B, even if there are no IT companies in city A.
+Our research question here is then ``To what extent do interlocks increase the diffusion rates in the PSS''.
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=.5\textwidth]{entropy.pdf}
+\caption{.}
+\label{fig:entropy}
+\end{center}
+\end{figure}
+
+One method to study if interlocks are predictors of the diffusion process is conditional entropy $H(X|Y)$.
+The conditional entropy  $H(Companies_{t_1}|Companies_{t_0})$ quantifies how much information we need to define the structure of the network at time 1 knowing the structure at time 0. 
+If the network of interlocks between sectors affect the network we will find that $H(Companies_{t_1}|Companies_{t_0},Interlocks_{t_0}) < H(Companies_{t_1}|Companies_{t_0})$.
+
+
+There are several problems with this approach.
+Firstly, we have explained that development creates interlocks (endogeneity problem).
+The use of longitudinal data allows us to quantify the effect of interlocks on development,
+independently of the effect of development on interlocks.
+Secondly, there is a chance of self-selection bias.
+Companies that want to develop to a new sector may create interlocks with that sector beforehand.
+However, if this is true, interlocks would also facilitate diffusion.
+Finally, a most important bias is omitted variable bias.
+If there is an underlying mechanism that produces the interlock at $time_1$ and the diffusion at $time_2$, 
+we would find a false effect of interlocks on the diffusion process.
+For example, cities that are developing fast (for whatever reason) may attract more interlocks than those who are not developing.
+In order to investigate this possibility, we need to control for city economic indicators, such as infrastructure, resources, education, population density.
+Other variables to control are sector size, number of companies, country indicators and type of interlocks (within city vs between cities).
+We can create random models using the product-service space and these variables to investigate their effect
+
+\subsubsection{Interlocks affect the company space (at least) through innovation}
+The subquestion corresponding to this subsection is ``Do interlocks foster collaboration between companies and innovation?''.
+%In the case of , 
+%- Innovation has become one of the key strategies of the firm for gaining competitive advantage (Hitt et al., 1996), expanding market share (Franko, 1989) and increasing firm performance (Morbey, 1988
+
+
+
+\subsection{Which factors affect interlocks}
+\label{sec:factors}
+The literature for the factors influencing interlock creation is more consistent.
+Geographical distance, colony history, language, education and social networks have been pointed as factors
+influencing the presence of interlocks [refs].
+Time allowing, we will explore this idea at the micro-scale using generative models such as ERGMs,
+which allow to control for network effects such as transitivity -- i.e. the probability that there is an interlock A--C if there are interlocks A--B and B--C is increased, and should be controlled.
+
+
+\subsection{Other projects}
+The data allow for the exploration of other projects, such as:
+(i) Description of inequality.
+(ii) Homogenization of coordinated and liberal market economies.
+(iii) Quantify the independence of a given sector (e.g. food).
+(iv) Measure the transference of power from domestic corporation to transnational corporations.
+(v) Network motifs, which combination of interlocks between sectors are more likely than random.
+
+
+\section{Data}
+\label{sec:data}
+``The most satisfactory sampling design for structural analysis is a saturation sample of the entire universe or population; 
+however, this alternative is clearly not feasible for large social structures'' 
+
+\begin{flushright}
+--- \textit{M.P. Allen, 1974}~\cite{Allen1974}
+\end{flushright}
+
+\subsection{Data description}
+The data from this project was extracted from Orbis.
+Orbis contains standardized information about 200 million firms and 100 million people. 
+The firm data includes economic indicators (such as turnover, employee number, profit ratios or sector),
+as well as 90 million ownership ties.
+The directors data includes biographic information (such as name, education, nationality or gender), 
+as well as 151 million position information,
+indirectly creating 1,000 million interlocks.
+
+The first step of the project consists on downloading, structuring and storing the data (months 1-4), quantifying the quality of the data (months 4-7) and assessing the effect on the results (months 8-9). For brevity we will skip most the details of the quality assessment. Figure ~\ref{fig:qual}A compares the number of companies in Orbis with the OECD. We can see that the quality is extremely good for large companies, but relatively bad for small companies. Importantly, the companies in Figure ~\ref{fig:qual}A are those with revenue and employment information (~60 million instead of 200). This is, most companies are in the database, but without financial information. 
+
+We developed a two-step approach to assess the quality of the data. In the first step, we developed interactive visualizations to rapidly explore the data \footnote{\url{https://github.com/uvacorpnet}}. The results showed that richer countries (measured by GDP per capita) have larger companies and better coverage. The visualizations also showed that the observed average revenue for the companies in a country depends on the coverage. Those with higher coverage include also small companies, decreasing the `average' company. In the second step, we characterized the data and extrapolate the quality to other countries. The distributions of revenue for a country follow a lognormal distribution, thus can be defined using two parameters (loc and scale). Moreover, the scale is fixed for all countries and the loc can be estimated using macro-economic indicators. This allows to quantify the type of missing companies (Fig. ~\ref{fig:qual}B). In the next month I will assess the effect of this in network measures.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=.5\textwidth]{qual.pdf}
+\caption{Global network of interlocking directorates. Color indicates communities -- i.e. cities that do business together within each other more often than with others.}
+\label{fig:qual}
+\end{center}
+\end{figure}
+
+\subsection{Data bias}
+
+The concept of interlock comes not without problems. We want to measure relationships between companies. However it is not clear that formal interlocks --~those occurring by people sitting together on boards -- are more important than interlocks created by directors being part of the same social clubs or the same families. By restricting ourselves to formal interlocks we may be missing an important part of the corporate network. However, we expect to capture a significant part of the relations between companies.
+
+
+
+In terms of internal validity, the concept of interlocks is captured in the data when one director holds positions in two companies. There are some problems with internal validity. Firstly, it’s not clear that we can separate administrative ties (mainly within corporate groups) from directorate ties (across corporate groups). This is so because the data providers from some countries (including the US) do not always state the type of position that a person holds.
+
+External validity and reliability are intimately related in my case. Since I’m studying global data, I can generalize only if my data has high quality. If my data is good everybody can use the same methods and obtain the same results.[they can do that also if the data is bad, but of course you are right to want good data; you should look into the concepts of (internal) validity, reliability, and generalizability again – you have not fully understood them] 
+
+Instead of talking about validity and reliability I will talk about completeness (how much of the data we have), bias (is our sample a random sample) and accuracy (is the data we have true). They are related to the concepts of validity and reliability and I believe they are more helpful in my discussion. I have extracted data about companies, with economic and geographic information about the company; and directors data, with information about people and the positions they hold.
+
+Company data
+1. Bias and completeness: We have assessed the bias and completeness of the data. We compared Orbis data with OECD data and found that small companies are underrepresented but large companies are always present. Moreover, we developed a method to use the economic data associated to each company to extrapolate the completeness to other countries. In general, Scandinavian countries have the highest quality (very complete and fairly unbiased), while poor countries have very bad data, although their biggest companies are present.
+We can now use our method to reconstruct missing data and assess the effect of including it. We expect the effect to be small since small companies are not usually connected in the network -- for example the owner of a small shop is not likely to sit in the board of directors of any company.
+[this means that there is bias, but you can assess the direction of the bias: it will lead you to find more interlockedness than there really is; this is important information; it is a problem if you want to make the case that there is a lot of interlockedness, because then you are facing a situation in which your data is biased in a way that  helps you prove yourself right; in that case it is better to propose that interlockedness is low, and then be able to show that it is still high, even if small (non-interlocked) companies are underrepresented in the data]
+
+(this is actually the first paper of my PhD. I chose to come up with a new idea for the tasks since I believe I can learn more from the discussion in a more social science paper).
+
+2.  Accuracy: We have checked the accuracy of a random sample and the information in the database is almost always correct. However, there are some problems in this area. Some information providers send their data faster than others, which makes the information of some countries be outdated (usually up to one year). Moreover, large company generally are required to fill consolidated accounts, including in their reports the profits, employees and other economics of their subsidiaries.  This doubles the information for big companies. [this is not clearly written]
+
+We have found a way to use the ownership relationship between companies to unconsolidate accounts. [good] For the companies with over 250 employees, we now have around 100\% of the expected numbers according to OECD data, while before we were almost doubling the numbers.[this is not clearly written]
+
+Directors data
+1. Bias and completeness: Based on manual inspection of a small sample of the data we found that some directors from small companies are missing. However, we will try to impute this data based on other economic factors (work in progress).[how is that possible?]
+
+2.  Accuracy: The accuracy of the data is not great either. Large companies have extra directors that have already left the company. The position of directors in some countries is unspecified, meaning that we don’t know if they are administrative ties or not. We can remove administrative ties by using the ownership database. If a director has positions in a shareholder and a wholly owned subsidiary then we can filter that tie. The problem with this approach is that two subsidiaries that are wholly owned by company A may not have any ownership relationship between them, but they are still the same corporation. We need to think more about this problem and try different solutions.[related to my comment above, this means you are adapting your data pool to be able to stick to your original definition of interlocks]
+
+In general, the way to assess validity and reliability in my paper is to assure good data quality. [data quality is only one source of validity; there are many more issues to consider to maximize the validity of your conclusions] We will do this by imputing the missing data and using this to produce confidence intervals of our metrics. Assessing data quality correctly, and analyzing the entire global network (instead of the top X firms) may allow us to give definite answers to many questions.
+[your approach to your research is very much data-driven; while you are right to be excited about your data, as it is a rich source of information and can help you make many interesting claims, it is important to get your head out of the data, so to speak, and think strategically about the questions you want answered and the way to answer them]
+
+
+In terms of operationalization, it is not clear that we can distinguish interlocking directorates from administrative ties. While the first are created by people with ability to decide or control decisions, in the second case the two `companies’ are not independent, but are part of the same structure.  Our data does not specify for some countries if the person creating the relationship is a director -- and therefore the relationship is a interlock -- or if the person is an administrative. However we expect to be able to correct this by using ownership information about companies. Relationships between companies that are accompanied by an ownership relationship can be discarded. 
+
+
+\section{Schedule}
+\label{sec:schedule}
+\begin{enumerate}
+\item Year 1: 
+\begin{itemize}
+\item Months 1-4: Get data
+\item Months 4-7: Analyze quality and bias
+\item Months 8-12: 
+\begin{itemize}
+\item  Effect of quality
+\item  Inequality in last names
+\end{itemize}
+\end{itemize}
+\item Year 2:
+\begin{itemize}
+\item  Create PSS
+\item  Analyze effect PSS and city development
+\item  Descriptive interlock
+\end{itemize}
+\item Year 3:
+\begin{itemize}
+\item  Interlocks and PSS
+\item  Interlocks and innovation
+\end{itemize}
+\item Year 4:
+\begin{itemize}
+\item  Determinants of interlocks
+\item Write thesis
+\end{itemize}
+\end{enumerate}
+
+
