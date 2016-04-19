@@ -32,12 +32,12 @@ At the same time,
 %This model would explain why researchers [refs] have found positive and negative relationship between interlocks and performance,
 
 
-We study a large dataset comprising 200 million companies and 100 million directors (see \ref{sec:data}) to bring definitive answers to the field .
+Here, we study a large dataset comprising 200 million companies and 100 million directors (see \ref{sec:data}) to bring definitive answers to the field .
 Our main research question is ``How is the network of interlocking directorates structured in time and space, and what is its effect on structural transformation?''.
 For the sake of brevity, we focus here on the second part of the question ``what is the effect of interlocks on structural transformation'',
 where structural transformation corresponds to the evolution of the distribution of economic activities within the city.
 In section \ref{sec:pss} we explore the concepts of structural transformation and the product-service space.
-The product-service space determines how closely two economic activities (sectors) are depending on how many cities have companies in both sectors.
+The product-service space determines how closely two economic activities (sectors) are depending on how often companies from both sectors are co-located in the same city.
 In section \ref{sec:interlockspss}, we determine if (and how) interlocks affect structural transformation.
 Section \ref{sec:factors} shows what factors influence the presence of interlocks.
 Our unit of analysis can be the company itself, the city, the country or the region. 
@@ -58,22 +58,23 @@ and it is not clear if these models can explain the variability observed in coun
 Moreover, the products that are developed depend on the current products being produced -- there is a relatedness between products.
 Many explanation have been proposed for this, 
 such as similar institutions, infrastructure, physical factors, technology, or some combination of those factors (see~\cite{hidalgo2007} for a review).
-Hidalgo, Hausman and Klinger~\cite{hidalgo2007, hausmann2011, Hausmann2006,hidalgo2009} assume that related products require similar underlying factors (`capabilities'),
-and developed the `product space' as a map of the relatedness between products,
+To reconcile previous research without abstracting from the products,
+Hidalgo, Hausmann and Klinger~\cite{hidalgo2007, hausmann2011, Hausmann2006,hidalgo2009} assume that related products require similar underlying factors (`capabilities').
+They next developed the `product space' as a map of the relatedness between products,
 where products are related if countries have competitive advantages respect to both products.
 They showed that the product space capture information about the set of capabilities available in a country, 
 is strongly correlated with income per capita, 
 and predictive of future growth.
 Furthermore, they proved that structural transformation at the country level occurs by moving from existing products to related products, 
-where two products are related if they are closed in the `product space'.
+where two products are related if they are close in the `product space'.
 
 In a world full of multi-nationals, innovation is happening at the city level~\citep{Belderbos2014}.
-To account for a fine-grained exploration of the process, we adapt the `product-space' concept. 
-We focus on relationships between economic activities at the city level,
-instead of product categories at the country level.
+To account for an exploration of the process at the city-level, we need adapt the `product-space' concept. 
+We will create the `product-space' using relationships between economic activities at the city level,
+instead of using product categories at the country level as in~\cite{hidalgo2007, hausmann2011, Hausmann2006,hidalgo2009}.
 Using cities allows us to explore not only products, but also services, thus we will define the `product-service space'. 
 The subquestion here is: ``Does structural transformation at the city follows the links of the product-service space''.
-We expect to find comparable trends at the city level than Hidalgo, Hausman and Klinger found at the country level.
+We expect to find comparable trends at the city level to those found by Hidalgo, Hausman and Klinger at the country level.
 The structural transformation should follow the edges in the product-service space, 
 and the diffusion process should correlate with gdp per capita in the city, 
 and maybe with innovation, for which we can use the city Innovation index \footnote{\url{http://www.innovation-cities.com/innovation-cities-index-2015-global/9609}}
@@ -93,54 +94,55 @@ where the benefit of having `in situ' capabilities is minimal.
 %and $E$ is the matrix of weights between sectors.
 
 
-\subsection{Interlocks and the PSS}
+\subsection{Interlocks and the product-service space}
 \label{sec:interlockspss}
 %[Research subquestion herere]
 Next, we will analyze if interlocks are a good predictor of diffusion between economic activities in cities. 
 Development itself influences the presence of interlocks.
 Companies situated close geographically, or in places with similar language or colonial ties 
 have greater chances to interlock [refs].
-Since the establishment of companies in the city allow for greater possibilities of interlocks,
+Since the establishment of companies within a city allows for greater possibilities of interlocks,
 we expect a relationship between the product-service space and the number of interlocks between economic activities.
 However it is not clear if interlocks are only a cause of development but also an effect.
 Interlocks provide a communication channel between companies, 
-and serve as a link for the spread of strategies and structures (refs).
+and serve as a link for the spread of strategies and structures [refs].
 For instance, [examples of previous research].
 We hypothesize that interlocks serve as a communication channel for opportunities,
 thus increasing investment and R\&D to sectors close in the product-service space.
-The increased investment and innovation has been linked to development~\citep{Romer1991,grossman1991,hidalgo2007}.
+The increased investment and innovation has been linked to economic development~\citep{Romer1991,grossman1991,hidalgo2007}.
 In a first step, we will test if interlocks affect the diffusion process in the product-service space.
 In a second step, we will analyze collaboration between companies using patent data to show if this diffusion process is mediated (at least partially) by innovation.
 
-\subsubsection{Interlocks affect the PSS}
+\subsubsection{Interlocks affect the product-service space}
 %[Research subquestion herere]
 Figure ~\ref{fig:entropy} shows our approach. 
-Given the number of companies in city A at time t (Fig. ~\ref{fig:entropy}A), 
-we want to explain the evolution to time t+1 (Fig. ~\ref{fig:entropy}B).
-Hidalgo and Hausmann~\cite{hidalgo2009} showed that this evolution (at the country level) is related to the `product space' (Fig. ~\ref{fig:entropy}C).
+Given the number of companies in city A at time $t$ (Fig. ~\ref{fig:entropy}A), 
+we want to explain the evolution to time $t+1$ (Fig. ~\ref{fig:entropy}B).
+This evolution occur in the edges of the `product space' (Fig. ~\ref{fig:entropy}C).
 We can create a network of interlocks (Fig. ~\ref{fig:entropy}D),
 where two economic activities are connected if a director sits in companies from both sectors.
 Importantly, the network of interlocks have relationships between sectors that are not present in Figure ~\ref{fig:entropy}A. 
 This is because interlocks are not restricted to the city itself.
 A director can sit in the banking sector in city A and in the IT sector in city B, even if there are no IT companies in city A.
-Our research question here is then ``To what extent do interlocks increase the diffusion rates in the product-service space?''.
+Our research question here is ``To what extent do interlocks increase the diffusion rates in the product-service space?''.
 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=.5\textwidth]{entropy.pdf}
-\caption{.}
+\caption{\textbf{Relation between interlocks, the product-service space, and the distribution of economic activities} (A--B) Distribution of economic activities within a city for times (A) $t$ and (B) $t+1$. The weight of the edges is the product of the number of companies in the nodes (the number of possible opportunities to interlock). (C) The product-space service. The weight of the edges indicate the relatedness of products. (D) Number of interlocks from directors sitting on boards in city A.}
 \label{fig:entropy}
 \end{center}
 \end{figure}
 
 One method to study if interlocks are predictors of the diffusion process is conditional entropy $H(X|Y)$.
-The conditional entropy  $H(Companies_{t_1}|Companies_{t_0})$ quantifies how much extra information we need to define the structure of the network at time 1 knowing the structure at time 0. 
-If the network of interlocks between economic activities affect structural transformation we will find that $H(Companies_{t_1}|Companies_{t_0},Interlocks_{t_0}) < H(Companies_{t_1}|Companies_{t_0})$.
-Other methods include using generative models such as ERGMs [ref] or SIENA [ref] to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t_1}$
-better than for $Companies_{t_0}$.
+The conditional entropy  $H(Companies_{t+1}|Companies_{t})$ quantifies how much extra information we need to define the structure of the network at time $t+1$ knowing the structure at time $t$. 
+If the network of interlocks between economic activities affect structural transformation we will find that 
+$$H(Companies_{t+1}|Companies_{t},Interlocks_{t}) < H(Companies_{t+1}|Companies_{t}).$$
+Other methods include using generative models such as ERGMs [ref] or SIENA [ref] to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t+1}$,
+better than for $Companies_{t}$.
 Such a models allow to control for node attributes (see below) and for recursive network effects 
--- e.g. the probability that there is an interlock A--C if there are interlocks A--B and B--C is increased (transitivity), and should be controlled.
+-- e.g. the probability that there is an interlock A--C increases if there are interlocks A--B and B--C (transitivity), and should be controlled.
 
 There are several problems with this approach.
 Firstly, we have explained that development creates interlocks (endogeneity problem).
@@ -150,14 +152,14 @@ Secondly, there is a chance of self-selection bias.
 Companies that want to develop a product in another sector may create interlocks with a company from economic activity beforehand.
 However, if this is true, interlocks would also facilitate diffusion.
 Finally, a most important bias is omitted variable bias.
-If there is an underlying mechanism that produces the interlock at $time_1$ and the diffusion at $time_2$, 
+If there is an underlying mechanism that produces the interlock at time $t + 1$ and the diffusion at time $t + 2$, 
 we would find a false effect of interlocks on the diffusion process.
 For example, cities that are developing fast (for whatever reason) may attract more interlocks than those who are not developing.
 In order to investigate this possibility, we need to control for city economic indicators, such as infrastructure, resources, education, city size, population density and growth.
 Other variables to control are sector size, country indicators and type of interlocks (within city versus between cities).
 We can create random models using the product-service space and these variables to investigate their effect.
 Importantly, this approach allows us not only to discover if interlocks play a role in the diffusive process, 
-but also to unravel what other factors also play a role in it.
+but also to unravel what other factors also play a role on it.
 Moreover, positive effects of interlocks in the diffusive process would imply that companies should seek interlocks in companies that are adjacent in the product-service space.
 
 
