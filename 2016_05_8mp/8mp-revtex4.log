@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.28)  19 APR 2016 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.28)  19 APR 2016 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -603,10 +603,10 @@ Missing character: There is no ™ in font cmr10!
 File: ./figures/corisk.png Graphic file (type png)
 
 <use ./figures/corisk.png>
-Package pdftex.def Info: ./figures/corisk.png used on input line 229.
+Package pdftex.def Info: ./figures/corisk.png used on input line 231.
 (pdftex.def)             Requested size: 255.0pt x 233.91997pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 229--230
+Overfull \hbox (9.0pt too wide) in paragraph at lines 231--232
  [] 
  []
 
@@ -615,10 +615,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 254.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 256.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 254.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 256.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -630,18 +630,15 @@ Missing character: There is no ™ in font cmr10!
 File: ./figures/seggregation.pdf Graphic file (type pdf)
 
 <use ./figures/seggregation.pdf>
-Package pdftex.def Info: ./figures/seggregation.pdf used on input line 274.
+Package pdftex.def Info: ./figures/seggregation.pdf used on input line 276.
 (pdftex.def)             Requested size: 484.49844pt x 221.37515pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.353 \lipsum[1-2]
+l.355 \lipsum[1-2]
                    <./figures/corisk.png>]
-Missing character: There is no â in font cmti10!
-Missing character: There is no € in font cmti10!
-Missing character: There is no ” in font cmti10!
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no ” in font cmti10!
@@ -652,7 +649,7 @@ Missing character: There is no ” in font cmti10!
                                                   \fi \fi 
 l.13 
       <./figures/seggregation.pdf>] [7]
-<./figures/entropy.pdf, id=283, 1121.24744pt x 1071.99078pt>
+<./figures/entropy.pdf, id=287, 1121.24744pt x 1071.99078pt>
 File: ./figures/entropy.pdf Graphic file (type pdf)
 
 <use ./figures/entropy.pdf>
@@ -664,11 +661,11 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 132--133
  []
 
 
-Overfull \hbox (100.96713pt too wide) detected at line 141
+Overfull \hbox (100.96713pt too wide) detected at line 142
 \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Companies[]\OMS/cmsy/m/n/10
- j\OML/cmm/m/it/10 Companies[]; Interlocks[]\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 
-< H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Companies[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it
-/10 Companies[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
+ j\OML/cmm/m/it/10 Companies[]; Interlocks[]\OT1/cmr/m/n/10 )[]  \OML/cmm/m/it/
+10 < H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Companies[]\OMS/cmsy/m/n/10 j\OML/cmm/m
+/it/10 Companies[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
  []
 
 [8pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
@@ -676,13 +673,13 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.164 
+l.165 
        <./figures/entropy.pdf>]) (./8mp.data.tex
 Underfull \hbox (badness 1983) in paragraph at lines 11--20
 []\OT1/cmr/m/n/10 The data from this project was extract-ed from
  []
 
-[9] <./figures/qual.pdf, id=328, 270.8911pt x 480.82118pt>
+[9] <./figures/qual.pdf, id=332, 270.8911pt x 480.82118pt>
 File: ./figures/qual.pdf Graphic file (type pdf)
 
 <use ./figures/qual.pdf>
@@ -698,8 +695,8 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 44--45
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.89 
-      <./figures/qual.pdf>]) (./8mp.schedule.tex
+l.86 \textit{Directors data}
+                             <./figures/qual.pdf>]) (./8mp.schedule.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -723,16 +720,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `8mp-revtex4.out' has not changed.
-(rerunfilecheck)             Checksum: 832798EA2D6BF75C2C22FFEF368E5DF5;1804.
+(rerunfilecheck)             Checksum: 4CCB94D355AF5163F3EE7FAB5A39A137;1812.
  ) 
 Here is how much of TeX's memory you used:
- 9745 strings out of 493085
- 140372 string characters out of 6136916
- 355112 words of memory out of 5000000
- 12964 multiletter control sequences out of 15000+600000
+ 9746 strings out of 493085
+ 140380 string characters out of 6136916
+ 356334 words of memory out of 5000000
+ 12965 multiletter control sequences out of 15000+600000
  12590 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,37p,757b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,37p,757b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -751,10 +748,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt9.pfb>
-Output written on 8mp-revtex4.pdf (12 pages, 7284715 bytes).
+Output written on 8mp-revtex4.pdf (12 pages, 7286183 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
+ 454 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
  78 named destinations out of 1000 (max. 500000)
  231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

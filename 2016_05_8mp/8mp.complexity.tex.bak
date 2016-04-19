@@ -138,11 +138,11 @@ Our view of the process, using Granovetter model as an example, is summarized in
 In Granovetter example there are some specific macro-conditions at time zero, 
 such as a level of hunger, a level of police reprisal, or a sense of collective.
 Moreover, no people are rioting ($\Phi_0 = 0$, where $\Phi_0$ is the percentage of the population rioting at time 0). 
-Given the micro-conditions, a few people ($x$) with threshold zero ($\phi_i == 0 \geq Phi_0$) -- very prone to riot -- make the individual decision to riot (micro-outcome). 
+Given the micro-conditions, a few people ($x$) with threshold zero ($\phi_i = 0 \geq Phi_0$) -- very prone to riot -- make the individual decision to riot (micro-outcome). 
 The macro-outcome is that a group of people are rioting. 
 This affects the macro-conditions ($\Phi_1 = x$). 
 The micro-conditions in Granovetter model are fixed (constant thresholds, although this is a simplification).
-Now, every individual compares their own threshold with $\Phi_1$, and riot if $\phi_i \geq Phi_1$. 
+Now, every individual compares their own threshold with $\Phi_1$, and riot if $\phi_i \geq \Phi_1$. 
 The cycle continues until we reach a stable state (for example revolution or just a few people rioting).
 This class of systems where the system is continuously evolving correspond to Complex Adaptive Systems.
 
@@ -155,36 +155,37 @@ For instance, we can deduct that that few people started rioting because police 
 However these kind of `ad hoc' explanations makes police reprisal a necessary condition, 
 while the same could have happened with no police reprisal, 
 or no rioting could have happened with the same reprisal.
-While we could probably say that some degree of police reprisal increased the propensity of rioting,
+While we could probably assume that some degree of police reprisal increased the propensity of rioting,
 we cannot conclude that reprisal is a necessary cause of rioting,
 or that police reprisal will cause another revolution in similar conditions.
 When the end result is the non-linear aggregation of many interconnected actors,
-the results can only be generalized
-when we can compare many independent, similar cases~\citep{watts2007}.
+the results cannot only be generalized
+unless we can compare many independent, similar cases~\citep{watts2007}.
 
 
 %“Summary: Complex system research is cooool”
-In the past decades we have seen the recollection of large datasets for many complex systems. 
+In the past decades we have witnessed the recollection of large datasets for many complex systems. 
 These large dataset include vast information on biology (e.g. interactions between thousands of proteins in the cell),
-social interactions (e.g. social networks, movement trackers, etc),
+social interactions (e.g. social networks, movement trackers, etc.),
 or the economy (e.g. Orbis, Reuters or LexisNexis provide information on firm indicators and directors for millions of companies worldwide).
 As a consequence, new methods and models have been developed for the study of these rich datasets. 
 These tools can be grouped in three categories.
 1. Descriptive tools: To characterize the macro-outcomes and find patterns in the data.
 2. Generative modelling: To explain emergence of macro-outcomes from the micro scale, how the macro-conditions affect the micro scale, or both.
 3. Predictive tools: A model is useful if it provide insights in the causal mechanisms and can predict future events. This include predicting what has already happened using only a portion of the data. 
-An example that combines the three categories is the work that resulted in the Atlas of Economic Complexity and that will be the basis of next section~\citep{Hausmann2006,hidalgo2007,hidalgo2009,hausmann2011}.
+An example that combines the three categories is the work that resulted in the Atlas of Economic Complexity that will be the basis of next section~\citep{Hausmann2006,hidalgo2007,hidalgo2009,hausmann2011}.
 Firstly, they described every country (macro scale) with respect to the type and amount of exports and imports (micro scale). 
 Secondly, they assumed a series of capabilities required to produce a product (for example institutions, materials, human capital). 
-If countries produce the products when they acquire the capabilities required to produce it, 
+If countries manufacture the products when they acquire the capabilities required to do so, 
 then products that are often exported together will require similar capabilities.
 Since it is not possible to quantify those capabilities, they created the one-mode projection of the model,
-namely network of products (named the `product space'), where two products were closer in the network if they were usually exported together. 
+namely a network of products (named the `product space'), 
+where two products were closer in the network if they were usually exported together. 
 Thirdly, they modeled the development of countries, showing that countries develop by acquiring new capabilities and producing products that are close in the product space.
-For instance, a country may develop an electronic industry if they chemicals is an important export, 
+For instance, a country may develop an electronic industry if chemicals is already an important export, 
 but not if they rely on exporting cereals~\citep{hidalgo2007}. 
 Finally, they used the current products produced in the country to create a better indicator for the economic growth of the country~\citep{hausmann2011}.
-Linking back to Coleman’s modified scheme (Fig.~\ref{fig:coleman_scheme}B) we see how the products that a country currently export and import (macro-conditions at time zero) affect the products that companies can produce (micro-conditions at time zero). 
+Linking back to Coleman’s modified scheme (Fig.~\ref{fig:coleman_scheme}B) we see how the products that a country currently export (macro-conditions at time zero) affect the products that companies can produce (micro-conditions at time zero). 
 This in turn affect the products that they actually produce (micro-outcomes at time zero), 
 which results in the total exports and imports (macro-outcomes at time zero).
 In this model, the macro-outcomes at time zero correspond to the macro-conditions at time one. 
@@ -200,7 +201,8 @@ The standard notation treats networks (graphs) as a series of nodes and edges, w
 \subsubsection{Descriptive tools}
 Descriptive tools are used to find patterns in the data.
 Summary statistics, correlations and visualizations allow for a rapid exploration of the data, and an assessment of data quality.
-Two of the main tools are community detection and centrality analysis.
+Moreover, they produce clusters of agents and quantify the importance of agents in the network.
+Two of the main descriptive tools are community detection and centrality analysis.
 Community detection finds nodes that interact with each other more than with the rest of the network.
 For example in a recent paper we studied a network of firm interlocks (ref), 
 where the nodes correspond to firms and the edges to shared directors.
@@ -217,7 +219,7 @@ betweenness centrality would be indicated.
 
 Communities and centralities have been used abundantly to describe data.
 In Clauset et. al.~\citep{Clauset2015} description of inequality in academia, 
-they mapped the academic trajectory of 19,000 faculty in three disciplines.
+they mapped the academic trajectory of $19,000$ faculty in three disciplines.
 From the mapping, they rank each institution by its relative ``prestige centrality''.
 Institution A is more prestigious than B if people can do their PhD in A and move to B, 
 but PhD graduates from B cannot find a job in A.
@@ -237,9 +239,9 @@ information.~\citep{corisk2009}}
 
 
 \subsubsection{Modeling}
-Modeling allows us to understand the world and predict future events better than people~\citep{tetlock2005} .
+Modeling allows us to understand the world and predict future events better than people~\citep{tetlock2005}.
 For example, modeling the network of bank co-risk (Fig. \ref{fig:corisk}) allowed authorities to assess the risk of not bailing out banks.
-The end result was the bankrupcy of Lehman Brothers and the bailing out of AIG.
+The end result was the bankruptcy of Lehman Brothers and the bailing out of AIG.
 The goals of modeling are to make causal inferences about a phenomenon and to predict future events.
 Three main models are used:
 Firstly, traditional statistical models explains an independent variable in terms of dependent variables. 
@@ -256,15 +258,15 @@ Finally, mathematical and computational modeling allows to recreate the physical
 
 As previously discussed, it is not possible to explain emergent properties just by studying the agents.
 Mathematical and computational models allow to close the gap between the micro and macro scales.
-In Granovetter rioting example, a mathematical model allows us to understand why a population will end up rioting, while other more prone to riot on average will not.
+In Granovetter rioting example, a mathematical model explains why a population will end up rioting, while other `more prone to riot on average' will not.
 In the segregation example of Schelling~\citep{schelling2006}, 
 a neighborhood of houses is simulated in a square lattice (chess board), 
-where most houses are occupied but some are empty, 
-allowing the inhabitants to move between houses.
+where most houses are occupied but some are empty. 
+Having some empty houses allows people to move between houses.
 Two different types of person live in the houses (let’s call them Belgians and Dutchies) in equal proportion.
-None of them are racists, but they would like to have at least two neighboors that are like them.
-If they do not have at least 25\% of the neighbors that are like them they move at random to one of the empty houses. 
-While the at random will not hold in reality, it is a conservative scenario.
+None of them are racists, but they would like to have at least two neighboors that are similar to themselves.
+If more than 70\% of the neighbors are from another country they move at random to one of the empty houses. 
+While the at random assumption will not hold in reality, it is a conservative scenario.
 If segregation is found with this simple model, selectively moving to neighbourhoods with a large population of your kind will only produce higher segregation rates.
 The result is the clear segregation showed in Figure \ref{fig:seggregation}A , that resembled the segregation in life (Fig. \ref{fig:seggregation}).
 
@@ -272,7 +274,7 @@ The result is the clear segregation showed in Figure \ref{fig:seggregation}A , t
 \begin{figure*}
 \begin{center}
 \includegraphics[width=.95\textwidth]{seggregation.pdf}
-\caption{Gwhite is pink (heavier concentrations look reddish), black is blue, Hispanic is orange, and Asian is green..}
+\caption{\textbf{Segretation in the simulation and in New York City.} (A) End result of the simulation from \url{http://nifty.stanford.edu/2014/mccown-schelling-model-segregation/}. (B) Segregation in New York City. Blue colors reflect areas with a majority of black people, orange areas are Hispanic. green areas are Asian and pink areas are white.}
 \label{fig:seggregation}
 \end{center}
 \end{figure*}
@@ -297,11 +299,11 @@ If you are interested on modeling smoking behavior in high schools,
 an agent-based model that includes selection and influence terms may be more appropriate~\citep{Mercken2010}.
 
 
-In political sciences, such models have been successfully applied to understand the spreading of ideas (contagion such as granovveter, Generalized contagion models (Dodds and Wattas 2004,2005): memory of exposure to a contagious entity (e.g. a rumor or disease), variable magnitudes of exposure (dose sizes), and heterogeneity in the susceptibility of individuals), 
-to understand the factors affecting polarization vs homogenization. 
-to find the micro-motives in the origin of inequality, 
-show why coordination and collaboration emerge,
-among others (refs for all). 
+In political sciences, such models have been successfully applied to understand the spreading of ideas [refs], %(contagion such as granovveter, Generalized contagion models (Dodds and Wattas 2004,2005): memory of exposure to a contagious entity (e.g. a rumor or disease), variable magnitudes of exposure (dose sizes), and heterogeneity in the susceptibility of individuals), 
+to understand the factors affecting polarization vs homogenization [refs],
+to find the micro-motives in the origin of inequality [ref], 
+show why coordination and collaboration emerge [ref],
+among others [refs]. 
 In general, modeling allows us to find and quantify which micro and macro-conditions are associated to the macro-outcomes observed.
 
 
@@ -359,10 +361,11 @@ where the action of an agent affect the actions of the others in a non-linear fa
 With the advances in technology, 
 we are for the first time able to gather large datasets of social systems.
 Data availability has come together intensive research in the area of complex systems,
-and we have now models to describe, model and predict these challenging structures.
+and we can now use formal models to describe, explain and predict these challenging structures.
 
-Let's finish with an extract from Duncan J. Watts's `The Collective Dynamics of Belief': \textit{``When collective behavior is generated from individual behavior via a nonlinear, stochastic aggregation process, it simply is not `explainable' in the usual way of `A caused B'. Once they have taken place, however, collective outcomes—even those that are highly counterintuitive and unpredictable—can always be rationalized. Some story can always be told, no matter how complicated, that traces a path from some initial state A to some final state B, and thus sounds like a causal story.
+Let's finish with an extract from Duncan J. Watts's `The Collective Dynamics of Belief': \textit{``When collective behavior is generated from individual behavior via a nonlinear, stochastic aggregation process, it simply is not `explainable' in the usual way of `A caused B'. Once they have taken place, however, collective outcomes—even those that are highly counterintuitive and unpredictable--can always be rationalized. Some story can always be told, no matter how complicated, that traces a path from some initial state A to some final state B, and thus sounds like a causal story.
 [...]
+But these descriptions are necessarily statistical in nature, comprising, for example, descriptions of probability distributions, rather than descriptions of particular outcomes. 
 Thus while we may hope to understand better the processes by which collective outcomes are generated, even a perfect understanding of those processes will not correspond to a causal explanation of why one particular outcome pertains and not another. Indeed, no such explanation is possible.''}
 
 

@@ -138,7 +138,8 @@ Our research question here is ``To what extent do interlocks increase the diffus
 One method to study if interlocks are predictors of the diffusion process is conditional entropy $H(X|Y)$.
 The conditional entropy  $H(Companies_{t+1}|Companies_{t})$ quantifies how much extra information we need to define the structure of the network at time $t+1$ knowing the structure at time $t$. 
 If the network of interlocks between economic activities affect structural transformation we will find that 
-$$H(Companies_{t+1}|Companies_{t},Interlocks_{t}) < H(Companies_{t+1}|Companies_{t}).$$
+$$H(Companies_{t+1}|Companies_{t},Interlocks_{t}) \\
+< H(Companies_{t+1}|Companies_{t}).$$
 Other methods include using generative models such as ERGMs [ref] or SIENA [ref] to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t+1}$,
 better than for $Companies_{t}$.
 Such a models allow to control for node attributes (see below) and for recursive network effects 
@@ -163,7 +164,7 @@ but also to unravel what other factors also play a role on it.
 Moreover, positive effects of interlocks in the diffusive process would imply that companies should seek interlocks in companies that are adjacent in the product-service space.
 
 
-\subsubsection{Interlocks affect the company space (at least) through innovation}
+\subsubsection{Interlocks affect the product-service space (at least) through innovation}
 In section~\ref{sec:interlockspss}, we investigate if interlocks affect the diffusive process in the product-service space.
 In this section, we hypothesize that the effect of interlocks in the diffusive process is caused at least partially by an improvement in collaboration and innovation.
 Innovation has been linked to gaining competitive advantage~\citep{Hitt1996}, expanding market share ~\citep{Franko1989} and increasing firm performance~\citep{Morbey1988}.
@@ -185,10 +186,9 @@ Time allowing, we will explore this idea at the micro-scale using generative mod
 
 \subsection{Other projects}
 The data allow for the exploration of other projects, such as:
-(i) Describe of the inequality among directors, studying if the inequality has its origin in the education.
+(i) Describe of the inequality among directors, studying if the inequality has its origin in education.
 (ii) Analyze the homogenization of coordinated and liberal market economies.
-(iii) Quantify the independence of a given sector (e.g. food).
+(iii) Quantify the independence of a given sector (e.g. food or media).
 (iv) Measure the transference of power from domestic corporation to transnational corporations.
-(v) Network motifs, which combination of interlocks between sectors are more likely than random.
-(vi) (Lack of) independence of media or food sectors across regions,
-(vii) Importance of the nation-state in economic networks
+(v) Network motifs, which combination of interlocks between sectors are more likely to occur than random.
+(vii) Importance of the nation-state in economic networks.
