@@ -27,13 +27,22 @@ Corporate elites on the interlock network are the actors with high centralities 
 
 The first step of the project consists on downloading, structuring and storing the data (months 1-4), quantifying the quality of the data (months 4-7) and assessing the effect on the results (months 8-10). For brevity we will skip most the details of the quality assessment. Figure ~\ref{fig:qual}A compares the number of companies in Orbis with the OECD estimates. We can see that the quality is extremely good for large companies, but relatively bad for small companies. However, the companies in Figure ~\ref{fig:qual}A are those with available revenue and employment information (~60 million instead of 200). Thus, we have most companies in the database, but without financial information. 
 
-We developed a two-step approach to assess the quality of the data. In the first step, we developed interactive visualizations to rapidly explore the data (see \url{https://github.com/uvacorpnet}). The results showed that richer countries (measured by GDP per capita) have larger companies and better data completeness. The visualizations also showed that the observed average revenue for the companies in a country depends on the completeness. Those with higher completeness include also small companies, decreasing the revenue of the `average' company. In the second step, we characterized the data and extrapolate the quality to other countries. The distributions of revenue for a country follow a lognormal distribution, thus can be defined using two parameters (loc and scale). Moreover, the scale is fixed for all countries and the loc can be estimated using macro-economic indicators. This allows to quantify the type of missing companies (Fig. ~\ref{fig:qual}B). In the next month we will assess the effect of completeness in network measures. 
+We developed a two-step approach to assess the quality of the data. In the first step, we developed interactive visualizations to rapidly explore the data (see \url{https://github.com/uvacorpnet}). The results showed that richer countries (measured by GDP per capita) have larger companies and better data completeness. 
+The visualizations also showed that the observed average revenue for the companies in a country depends on the completeness. 
+Those with higher completeness include also small companies, 
+decreasing the revenue of the `average' company. 
+In the second step we characterized the data and extrapolate the quality to other countries. 
+The distributions of revenue for a country follow a lognormal distribution, 
+thus can be defined using two parameters (loc and scale). 
+Moreover, the scale is fixed for all countries and the loc can be estimated using macro-economic indicators. 
+This allows us to quantify the type of missing companies (Fig. ~\ref{fig:qual}B). 
+In the next months we will assess the effect of completeness in network measures. 
 This assessment will determine to what extent our results are generalizable. 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=.5\textwidth]{qual.pdf}
-\caption{\textbf{Data quality} (A) The coverage of companies with financial information decreases as the.}
+\caption{\textbf{Data quality} (A) The coverage of companies with financial information decreases with the company size. (B) Data quality in the OECD. Red colors indicate good coverage, while blue colors indicate bad coverage.}
 \label{fig:qual}
 \end{center}
 \end{figure}
@@ -50,12 +59,11 @@ we use the \textit{MeanShift} algorithm~\citep{fukunaga1975}.
 This allow us to automatically merge Boston and Cambridge, New York City and Brooklyn, or Amsterdam and Amstelveen.
 
 
-
-We will next talk about completeness (how much of the data we have), 
+Next, we talk about completeness (how much of the data we have), 
 bias (is our sample a random sample), 
 and accuracy (is the data we have true). 
 
-\textit{Company data}
+\textit{Company data: }
 1. Bias and completeness: 
 We have assessed the bias and completeness of the data (Fig. ~\ref{fig:qual}B). 
 In general, Scandinavian countries have the highest quality (very complete and fairly unbiased), 
@@ -64,33 +72,33 @@ We can now use our method to reconstruct missing data and assess the effect of i
 We expect the effect to be small since small companies are not usually connected in the network -- for example the owner of a small shop is not likely to sit in the board of directors of any company.
 
 2.  Accuracy: 
-We have checked the accuracy of a random sample and the information in the database is almost always correct. 
+We have checked the accuracy of a small sample and the information in the database is almost always correct. 
 However, there are some problems in this area. 
 Some information providers send their data faster than others, which makes the information of some countries be outdated up to one year. 
 Moreover, large company generally are required to fill consolidated accounts, 
 including in their reports the profits, employees and other economics of their subsidiaries. 
 Because we also have information about the subsidiaries in our database, 
 the profits of the subsidiaries are registered twice.
-However, because we have information about the subsidiaries,
+However, also because we have information about the subsidiaries,
 we can unconsolidate the accounts.
-Figure ~\ref{fig:qual} are based on the unconsolidated results.
+Figure ~\ref{fig:qual} is based on unconsolidated accounts.
 
-\textit{Directors data}
+\textit{Directors data: }
 Missing actors in social networks produce less bias in the network than missing companies~\citep{Kossinets2006}.
-This is important since directors data is harder to check.
+This is important since data quality about directors is more difficult to assess.
 
 1. Bias and completeness: 
 Based on manual inspection of a small sample of the data we found that some directors from small companies are missing. 
-However, we can create confidence intervals by imputing missing (rewiring the network)
+However, we can create confidence intervals by imputing missing directors (rewiring the network) at random multiple times.
 
 2.  Accuracy: 
 We found that large companies have extra directors that have already left the company. 
-However, we can create confidence intervals by imputing missing (rewiring the network)
+However, we can create confidence intervals by deleting directors (rewiring the network) at random multiple times.
 Moreover, the type of position of directors in some countries is unspecified, 
 meaning that we do not know if the person is an administrative (e.g. secretary, lawyer, etc) or a director.
 However, we can remove administrative ties by using the ownership database. 
-If a director has positions in a shareholder and a wholly owned subsidiary then we can filter that tie. 
-A consideration in this approach is that two subsidiaries that are wholly owned by company A may not have any ownership relationship between them, 
+If a director has positions in a shareholder and a wholly owned subsidiary we can filter that tie. 
+A concern in this approach is that two subsidiaries that are wholly owned by company A may not have any ownership relationship between them, 
 but they are still the same corporation. 
 We can correct this by deleting all ties within the same corporate structure.
 
