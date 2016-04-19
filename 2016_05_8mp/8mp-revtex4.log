@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.28)  19 APR 2016 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.28)  19 APR 2016 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,17 +558,9 @@ File: ./figures/fig1.png Graphic file (type png)
 
 <use ./figures/fig1.png>
 Package pdftex.def Info: ./figures/fig1.png used on input line 3.
-(pdftex.def)             Requested size: 356.99844pt x 182.30096pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTeX warning (ext4)
-: destination with the same identifier (name{figure.1}) has been already used, 
-duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.91 \subsection
-                {The micro-macro problem in social sciences. A complex syste...
- <./figures/fig1.png>]
-<./figures/coleman.pdf, id=152, 387.74138pt x 238.42024pt>
+(pdftex.def)             Requested size: 331.49689pt x 169.27895pt.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <./figures/coleman.pdf,
+ id=145, 387.74138pt x 238.42024pt>
 File: ./figures/coleman.pdf Graphic file (type pdf)
 
 <use ./figures/coleman.pdf>
@@ -579,22 +571,30 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 95--96
  [] 
  []
 
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.164 
-       <./figures/coleman.pdf>]
+l.100 
+       <./figures/fig1.png>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.167 I
+       n the past decades we have witnessed the recollection of large datase...
+ <./figures/coleman.pdf>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -660,26 +660,18 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 132--133
  [] 
  []
 
-
-Overfull \hbox (100.96713pt too wide) detected at line 142
-\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Companies[]\OMS/cmsy/m/n/10
- j\OML/cmm/m/it/10 Companies[]; Interlocks[]\OT1/cmr/m/n/10 )[]  \OML/cmm/m/it/
-10 < H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Companies[]\OMS/cmsy/m/n/10 j\OML/cmm/m
-/it/10 Companies[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
- []
-
 [8pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.165 
+l.169 
        <./figures/entropy.pdf>]) (./8mp.data.tex
 Underfull \hbox (badness 1983) in paragraph at lines 11--20
 []\OT1/cmr/m/n/10 The data from this project was extract-ed from
  []
 
-[9] <./figures/qual.pdf, id=332, 270.8911pt x 480.82118pt>
+[9] <./figures/qual.pdf, id=333, 270.8911pt x 480.82118pt>
 File: ./figures/qual.pdf Graphic file (type pdf)
 
 <use ./figures/qual.pdf>
@@ -695,8 +687,8 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 44--45
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.86 \textit{Directors data}
-                             <./figures/qual.pdf>]) (./8mp.schedule.tex
+l.86 \textit{Directors data: }
+                               <./figures/qual.pdf>]) (./8mp.schedule.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -723,13 +715,13 @@ Package rerunfilecheck Info: File `8mp-revtex4.out' has not changed.
 (rerunfilecheck)             Checksum: 4CCB94D355AF5163F3EE7FAB5A39A137;1812.
  ) 
 Here is how much of TeX's memory you used:
- 9746 strings out of 493085
- 140380 string characters out of 6136916
+ 9747 strings out of 493085
+ 140392 string characters out of 6136916
  356334 words of memory out of 5000000
  12965 multiletter control sequences out of 15000+600000
  12590 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,37p,757b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,37p,757b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -748,10 +740,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt9.pfb>
-Output written on 8mp-revtex4.pdf (12 pages, 7286183 bytes).
+Output written on 8mp-revtex4.pdf (12 pages, 7286307 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
  231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

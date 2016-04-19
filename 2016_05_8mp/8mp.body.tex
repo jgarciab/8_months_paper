@@ -138,8 +138,12 @@ Our research question here is ``To what extent do interlocks increase the diffus
 One method to study if interlocks are predictors of the diffusion process is conditional entropy $H(X|Y)$.
 The conditional entropy  $H(Companies_{t+1}|Companies_{t})$ quantifies how much extra information we need to define the structure of the network at time $t+1$ knowing the structure at time $t$. 
 If the network of interlocks between economic activities affect structural transformation we will find that 
-$$H(Companies_{t+1}|Companies_{t},Interlocks_{t}) \\
-< H(Companies_{t+1}|Companies_{t}).$$
+\begin{equation}
+\begin{split}
+H(Companies_{t+1}|Companies_{t},Interlocks_{t}) \\
+< H(Companies_{t+1}|Companies_{t}).
+\end{split}
+\end{equation}
 Other methods include using generative models such as ERGMs [ref] or SIENA [ref] to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t+1}$,
 better than for $Companies_{t}$.
 Such a models allow to control for node attributes (see below) and for recursive network effects 
