@@ -256,7 +256,7 @@ year = {2006}
 }
 
 @book{mills1957,
-  booktitle={The power elite},
+  title={The power elite},
   author={Mills, C Wright},
   year={1957},
   publisher={JSTOR}

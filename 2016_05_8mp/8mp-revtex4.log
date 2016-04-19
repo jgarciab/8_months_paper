@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.28)  19 APR 2016 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.28)  19 APR 2016 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,7 +465,11 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 33.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 33.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 33.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 33.
-(./8mp-revtex4.aux)
+(./8mp-revtex4.aux
+
+LaTeX Warning: Label `fig:entropy' multiply defined.
+
+)
 \openout1 = `8mp-revtex4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -482,8 +486,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count135
 \scratchdimen=\dimen146
@@ -642,36 +645,53 @@ l.355 \lipsum[1-2]
 Missing character: There is no â in font cmti10!
 Missing character: There is no € in font cmti10!
 Missing character: There is no ” in font cmti10!
-) (./8mp.body.tex [6pdfTeX warning (ext4): destination with the same identifier
- (name{figure.4}) has been already used, duplicate ignored
+) (./8mp.body.tex
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.13 
-      <./figures/seggregation.pdf>] [7]
-<./figures/entropy.pdf, id=287, 1121.24744pt x 1071.99078pt>
-File: ./figures/entropy.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `fig:bipartite' on page 6 undefined on input line 6.
 
-<use ./figures/entropy.pdf>
-Package pdftex.def Info: ./figures/entropy.pdf used on input line 132.
-(pdftex.def)             Requested size: 255.0pt x 243.78831pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 132--133
- [] 
- []
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.169 
+l.13 
+      <./figures/seggregation.pdf>]
+<./figures/bipartite.pdf, id=249, 1389.41925pt x 956.45122pt>
+File: ./figures/bipartite.pdf Graphic file (type pdf)
+
+<use ./figures/bipartite.pdf>
+Package pdftex.def Info: ./figures/bipartite.pdf used on input line 16.
+(pdftex.def)             Requested size: 229.49844pt x 157.98277pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.99 
+      <./figures/bipartite.pdf>]
+<./figures/entropy.pdf, id=303, 1121.24744pt x 1071.99078pt>
+File: ./figures/entropy.pdf Graphic file (type pdf)
+
+<use ./figures/entropy.pdf>
+Package pdftex.def Info: ./figures/entropy.pdf used on input line 140.
+(pdftex.def)             Requested size: 255.0pt x 243.78831pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 140--141
+ [] 
+ []
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.159 
        <./figures/entropy.pdf>]) (./8mp.data.tex
 Underfull \hbox (badness 1983) in paragraph at lines 11--20
 []\OT1/cmr/m/n/10 The data from this project was extract-ed from
  []
 
-[9] <./figures/qual.pdf, id=333, 270.8911pt x 480.82118pt>
+[9] <./figures/qual.pdf, id=349, 270.8911pt x 480.82118pt>
 File: ./figures/qual.pdf Graphic file (type pdf)
 
 <use ./figures/qual.pdf>
@@ -682,13 +702,13 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 44--45
  [] 
  []
 
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.86 \textit{Directors data: }
-                               <./figures/qual.pdf>]) (./8mp.schedule.tex
+l.73 
+      <./figures/qual.pdf>]) (./8mp.schedule.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -713,15 +733,22 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `8mp-revtex4.out' has not changed.
 (rerunfilecheck)             Checksum: 4CCB94D355AF5163F3EE7FAB5A39A137;1812.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 9747 strings out of 493085
- 140392 string characters out of 6136916
- 356334 words of memory out of 5000000
- 12965 multiletter control sequences out of 15000+600000
+ 9753 strings out of 493085
+ 140531 string characters out of 6136916
+ 363588 words of memory out of 5000000
+ 12969 multiletter control sequences out of 15000+600000
  12590 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,15n,37p,757b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,37p,757b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -740,10 +767,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt9.pfb>
-Output written on 8mp-revtex4.pdf (12 pages, 7286307 bytes).
+Output written on 8mp-revtex4.pdf (12 pages, 7299194 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 391 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 402 compressed objects within 5 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 

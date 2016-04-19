@@ -8,50 +8,50 @@ Warning--entry type for "Note1" isn't style-file defined
 Warning--entry type for "Note2" isn't style-file defined
 --line 2 of file 8mp-revtex4Notes.bib
 Database file #2: 8mp.bib
+Warning--I'm ignoring watts2007's extra "title" field
+--line 154 of file 8mp.bib
 Warning--can't use both volume and number fields in jeidels1905
-Warning--empty title in Lenin1917
 Warning--empty journal in weber1904
 Warning--empty journal in Belderbos2014
-Warning--empty title in mills1957
 You've used 34 entries,
             1795 wiz_defined-function locations,
             664 strings with 8061 characters,
-and the built_in function-call counts, 6889 in all, are:
-= -- 628
+and the built_in function-call counts, 6896 in all, are:
+= -- 631
 > -- 239
 < -- 4
 + -- 97
 - -- 63
-* -- 436
-:= -- 1072
-add.period$ -- 97
+* -- 435
+:= -- 1075
+add.period$ -- 98
 call.type$ -- 34
 change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 39
+cite$ -- 37
 duplicate$ -- 317
 empty$ -- 725
 format.name$ -- 63
-if$ -- 1527
+if$ -- 1530
 int.to.chr$ -- 0
 int.to.str$ -- 34
 missing$ -- 40
-newline$ -- 168
+newline$ -- 169
 num.names$ -- 32
-pop$ -- 116
+pop$ -- 112
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 133
 stack$ -- 0
 substring$ -- 487
-swap$ -- 49
+swap$ -- 51
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
+warning$ -- 3
 while$ -- 70
 width$ -- 36
-write$ -- 349
-(There were 7 warnings)
+write$ -- 352
+(There were 6 warnings)

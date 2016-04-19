@@ -3,13 +3,21 @@
 \subsection{Interlocking directorates}
 Companies are embedded in complex networks of `interlocking directorates' -- 
 created when directors from a corporation sit on multiple boards.
-The relationship between two corporations resulting from a director sitting in both of their boards is often referred to as a direct interlock~\citep{Mizruchi1996}.
+The relationship between two corporations resulting from a director sitting in both of their boards is often referred to as a direct interlock~\citep{Mizruchi1996} (Fig.~\ref{fig:bipartite}).
 Interlocks can also be indirect when two directors from two firms sit together on the board of directors of a third firm. 
 Several explanations (micro-motives) have been pointed out for the creation of interlocks. 
 These include facilitating cooperation to limit competition (collusion),  
 absorption of potentially disruptive elements (cooptation), 
 creating legitimacy by hiring respectable directors, 
 career advancement, and social cohesion~\citep{Mizruchi1996}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=.5\textwidth]{bipartite.pdf}
+\caption{\textbf{Two-modes and one-mode networks}. Relationship between companies and directors (bipartite network) and one-mode projections (unipartite networks). Company A and B have a direct interlock}
+\label{fig:entropy}
+\end{center}
+\end{figure}
 
 Although the micro-motives for the existence of interlocks are relatively well understood, 
 their effects are still object to controversy. 
