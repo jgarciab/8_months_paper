@@ -130,18 +130,19 @@ Our research question here is ``To what extent do interlocks increase the diffus
 \begin{figure}
 \begin{center}
 \includegraphics[width=.5\textwidth]{entropy.pdf}
-\caption{\textbf{d}}
+\caption{\textbf{Relation between interlocks, the product-service space, and the distribution of economic activities} (A--B) Distribution of economic activities within a city for times (A) $t$ and (B) $t+1$. The weight of the edges is the product of the number of companies in the nodes (the number of possible opportunities to interlock). (C) The product-space service. The weight of the edges indicate the relatedness of products. (D) Number of interlocks from directors sitting on boards in city A.}
 \label{fig:entropy}
 \end{center}
 \end{figure}
 
 One method to study if interlocks are predictors of the diffusion process is conditional entropy $H(X|Y)$.
-The conditional entropy  $H(Companies_{t_1}|Companies_{t_0})$ quantifies how much extra information we need to define the structure of the network at time 1 knowing the structure at time 0. 
-If the network of interlocks between economic activities affect structural transformation we will find that $H(Companies_{t_1}|Companies_{t_0},Interlocks_{t_0}) < H(Companies_{t_1}|Companies_{t_0})$.
-Other methods include using generative models such as ERGMs [ref] or SIENA [ref] to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t_1}$
-better than for $Companies_{t_0}$.
+The conditional entropy  $H(Companies_{t+1}|Companies_{t})$ quantifies how much extra information we need to define the structure of the network at time $t+1$ knowing the structure at time $t$. 
+If the network of interlocks between economic activities affect structural transformation we will find that 
+$$H(Companies_{t+1}|Companies_{t},Interlocks_{t}) < H(Companies_{t+1}|Companies_{t}).$$
+Other methods include using generative models such as ERGMs [ref] or SIENA [ref] to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t+1}$,
+better than for $Companies_{t}$.
 Such a models allow to control for node attributes (see below) and for recursive network effects 
--- e.g. the probability that there is an interlock A--C if there are interlocks A--B and B--C is increased (transitivity), and should be controlled.
+-- e.g. the probability that there is an interlock A--C increases if there are interlocks A--B and B--C (transitivity), and should be controlled.
 
 There are several problems with this approach.
 Firstly, we have explained that development creates interlocks (endogeneity problem).
@@ -151,14 +152,14 @@ Secondly, there is a chance of self-selection bias.
 Companies that want to develop a product in another sector may create interlocks with a company from economic activity beforehand.
 However, if this is true, interlocks would also facilitate diffusion.
 Finally, a most important bias is omitted variable bias.
-If there is an underlying mechanism that produces the interlock at $time_1$ and the diffusion at $time_2$, 
+If there is an underlying mechanism that produces the interlock at time $t + 1$ and the diffusion at time $t + 2$, 
 we would find a false effect of interlocks on the diffusion process.
 For example, cities that are developing fast (for whatever reason) may attract more interlocks than those who are not developing.
 In order to investigate this possibility, we need to control for city economic indicators, such as infrastructure, resources, education, city size, population density and growth.
 Other variables to control are sector size, country indicators and type of interlocks (within city versus between cities).
 We can create random models using the product-service space and these variables to investigate their effect.
 Importantly, this approach allows us not only to discover if interlocks play a role in the diffusive process, 
-but also to unravel what other factors also play a role in it.
+but also to unravel what other factors also play a role on it.
 Moreover, positive effects of interlocks in the diffusive process would imply that companies should seek interlocks in companies that are adjacent in the product-service space.
 
 

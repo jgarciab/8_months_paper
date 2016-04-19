@@ -5,6 +5,8 @@ The style file: unsrtabbrv.bst
 Database file #1: 8mp-revtex4Notes.bib
 Warning--entry type for "Note1" isn't style-file defined
 --line 1 of file 8mp-revtex4Notes.bib
+Warning--entry type for "Note2" isn't style-file defined
+--line 2 of file 8mp-revtex4Notes.bib
 Database file #2: 8mp.bib
 Warning--can't use both volume and number fields in jeidels1905
 Warning--empty title in Lenin1917
@@ -13,43 +15,43 @@ Warning--empty journal in Belderbos2014
 Warning--empty title in mills1957
 You've used 34 entries,
             1795 wiz_defined-function locations,
-            669 strings with 8204 characters,
-and the built_in function-call counts, 7025 in all, are:
-= -- 645
-> -- 249
+            664 strings with 8061 characters,
+and the built_in function-call counts, 6889 in all, are:
+= -- 628
+> -- 239
 < -- 4
-+ -- 100
-- -- 66
-* -- 455
-:= -- 1104
-add.period$ -- 99
++ -- 97
+- -- 63
+* -- 436
+:= -- 1072
+add.period$ -- 97
 call.type$ -- 34
-change.case$ -- 25
+change.case$ -- 24
 chr.to.int$ -- 0
 cite$ -- 39
-duplicate$ -- 321
-empty$ -- 727
-format.name$ -- 66
-if$ -- 1550
+duplicate$ -- 317
+empty$ -- 725
+format.name$ -- 63
+if$ -- 1527
 int.to.chr$ -- 0
 int.to.str$ -- 34
-missing$ -- 41
-newline$ -- 170
-num.names$ -- 33
-pop$ -- 108
+missing$ -- 40
+newline$ -- 168
+num.names$ -- 32
+pop$ -- 116
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 129
+skip$ -- 133
 stack$ -- 0
-substring$ -- 503
+substring$ -- 487
 swap$ -- 49
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 73
+while$ -- 70
 width$ -- 36
-write$ -- 355
-(There were 6 warnings)
+write$ -- 349
+(There were 7 warnings)

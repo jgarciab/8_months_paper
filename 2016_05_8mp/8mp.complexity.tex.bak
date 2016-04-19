@@ -23,20 +23,20 @@ which exhibit characteristics different than the parts --
 Complex systems contrast with complicated systems, where many different parts with defined roles are put together to create the system. 
 Complicated systems, such a watch, can be studied by analyzing their parts. 
 Moreover the failure of a piece produces the failure of the system.
-Complex systems, such a bird flock, cannot be studying by analyzing only their parts, 
+Complex systems, such as bird flocks, cannot be studying by analyzing only the characteristics of the parts, 
 but the interactions among them are also needed.  
 Although a consensus definition of complex system does not yet exist, a complex system is characterized by the following attributes. 
-1. Multi-scale: Many individual parts interact to create the whole. 
-2. Networks: The individuals usually interact with a few other individuals, creating a network of interactions. For social systems, the networks created are ``small-world'' networks, where the distance between two random people in a network is small.  
-3. Emergent properties: The whole has properties that none of the individuals have. 
-4. Spontaneous order. There is not a global organizer of the system. For instance, the standing ovation is an emergent property of the interaction between people. 
-5. Memory: The individuals remember previous interactions. 
-6. Feedback loops: The interaction between two individuals affect other individuals in the system. For example your decision about standing up affects the probability that other people start standing up.  
-7. Stochasticity: The system lives in a noisy environment. 
-8. Steady-states are far from equilibrium. Complex systems are usually in a steady-state (except during transition times). However, since they depends on active interactions between people, they stay far from the equilibrium. If no energy is added to the system, the system disappears.
-9. Non-linearity, cascading and hysteresis. The interactions are non additive. For the standing ovation, the addition of a new person standing can produce a cascade of events.
-10. Robustness to random failures. The system is highly resistant to the failure of one of the individuals. 
-11. Sensitivity to targeted failures if individuals are organized in network: The system is sensitive to the failure/removal of a few specific individuals. 
+(i) Multi-scale: Many individual parts interact to create the whole. 
+(ii) Networks: The individuals usually interact only with a few other individuals, creating a network of interactions. For social systems, the networks created are ``small-world'' networks, where the distance between two random people in a network is small.  
+(iii) Emergent properties: The whole has properties that none of the individuals have. 
+(iv) Spontaneous order. There is not a global organizer of the system. For instance, the collective behavior of flocks is an emergent property of the interaction between birds. 
+(v) Memory: The individuals remember previous interactions. 
+(vi) Feedback loops: The interaction between two individuals affect other individuals in the system. For example the decision of a bird to turn affect the probability that other birds turn as well, which affect the probability that the first bird keep turning.
+(vii) Stochasticity: The system lives in a noisy environment. 
+(viii) Steady-states are far from equilibrium. Complex systems are usually in a steady-state (except during transition times). However, since they depends on active interactions between people, they stay far from the equilibrium. If no energy is added to the system, the system disappears.
+(ix) Non-linearity, cascading and hysteresis. The interactions are non additive. In a standing ovation, the addition of a new person standing can produce a cascade of events, resulting on a general standing ovation.
+(x) Robustness to random failures. The system is highly resistant to the failure of one of the individuals. 
+(xi) Sensitivity to targeted failures if individuals are organized in network: The system is sensitive to the failure/removal of a few specific individuals. 
 
 \subsection{The micro-macro problem}
 %“Summary: Interactions are important”
@@ -50,12 +50,12 @@ but networks must be taken into account.
 Similarly, the performance of a firm depends not only on their product,
 but also on the interaction between firms, governments and other groups, 
 which in turn are composed and influenced by individuals.
-Moreover, the success of their product 
+Moreover, the success of a company's product 
 -- which is partly based on the interaction with other firms and groups -- 
 affects the actions of your suppliers and competitors.
 A classic example are format wars,
 where inferior products can (and often do) succeed.
-The problem where the whole depends on both the parts and the interaction between pars is often called `the micro-macro problem'.
+The problem where the whole depends on both the parts and the interaction between parts is often called `the micro-macro problem'.
 
 %“Summary: The whole is different than the sum of the parts”
 The micro-macro problem is found across disciplines. 
@@ -74,7 +74,7 @@ Importantly, although predicting the whole in individual situations is difficult
 this does not imply that we cannot observe correlations at the macro scale. 
 In our physics example, humidity and temperature increase the probability of a specific shape of the snowflake. 
 Cardiac cells will be more likely to beat if specific chemicals are added.
-A colony of ants will be more likely to leave the colony to scavenge for food if the temperature is low. 
+A colony of ants will be more likely to leave the colony to scavenge for food if the temperature is moderate. 
 A play will be more likely to receive a standing ovation example if it is good.
 However, it is important to observe that the correlations are indirect.
 The humidity does not affect the shape directly, but affect the probability of two molecules of water binding in an specific way. 
@@ -94,21 +94,21 @@ an appropriate model for the micro-macro problem is required.
 \begin{center}
 \includegraphics[width=.5\textwidth]{coleman.pdf}
 \end{center}
-\caption{Global network of interlocking directorates. Color indicates communities -- i.e. cities that do business together within each other more often than with others. Adapted from \cite{raub2011micro}}
+\caption{\textbf{Coleman's scheme}. (A) Original scheme, where the arrow 4 is explained by the arrows 1->2->3. (B) Adapted scheme, where a feedback loop is implemented.}
 \label{fig:coleman_scheme}
 \end{figure}
 
 %“Summary: Being able to think doesn’t really make you so special in the eyes of the Complexity Deity”
 In social sicences, Colleman’s scheme~\citep{coleman1990} (Fig.~\ref{fig:coleman_scheme}A) is the standard framework to represent the micro-macro problem.
-Nodes A and D in Figure.~\ref{fig:coleman_scheme} are the macro-conditions (composed of the environment where the system is situated) and macro-outcomes of the social system. 
+Nodes A and D in Figure.~\ref{fig:coleman_scheme}A are the macro-conditions (composed of the environment where the system is situated) and macro-outcomes of the social system. 
 Node B corresponds to the micro-conditions (composed of the perceived environment, as well as genetic and other individual factors). 
 Micro-conditions are affected by the macro-conditions. 
-This arrow is usually labeled as bridge assumptions.
+This arrow is usually labelled as bridge assumptions.
 Micro-outcomes are the decisions of the individual among the possible options. 
 In the standing ovation example, this corresponds to each individual decision to stand up or not. 
 This arrow is non-trivial, since the decision does not depend only on each agent's conditions, 
 but also on interdependent relationships with other individuals.
-In Granovetter's model~\cite{granovetter1978}, the individuals are characterized by a threshold $\phi$ that summarizes their micro-conditions. 
+In Granovetter's model~\cite{granovetter1978} of riots, individuals are characterized by a threshold $\phi$ that summarizes their micro-conditions. 
 Each person will then riot if there are at least $\phi$ other people rioting already.
 Similarly to the standing ovation, the population will end up in a generalized revolution, 
 or it will die off depending on the distribution of thresholds in the population. 
@@ -116,17 +116,17 @@ For instance, consider population A, where 10\% of a population starts rioting, 
 In this population, the `average' person will riot if 18\% of the population are rioting, but no revolution will occur.
 Imagine now population B, where 10\% of the population starts rioting, another 20\% will riot if 10\% is already rioting and the final 70\% will only riot if 30\% of the population is rioting the revolution will spread. 
 In population B, the `average' person will riot if 23\% are already rioting, however due to the non-linearity in the aggregation a revolution will occur.
-The aggregation of the micro-outcomes (the individual decisions to riot or not riot) corresponds to label 3. This arrow is usually labeled as transformation rules.
+The aggregation of the micro-outcomes (the individual decisions to riot or not riot) corresponds to label 3. This arrow is usually labelled as transformation rules.
 
 
 %“Summary: it is a cycle you dumb”
 Coleman’s original scheme~\cite{coleman1990} uses Webber’s origin of capitalism~\citep{weber1904} as an example, 
 linking it to the micro-macro problem. 
-He explains the rise of capitalism (D) from protestant religious doctrine (A). 
+He explains the rise of capitalism (node D in Fig.~\ref{fig:coleman_scheme}A) from protestant religious doctrine (A). 
 A protestant religious doctrine creates specific values in the individuals (B) that produce certain economic behaviours (C). 
 The aggregation of these economic behaviours gives rise to the capitalism (D). 
 Capitalism is the result of the economic behaviour of people, which in turn is caused by the individual interpretation of the values of protestantism.
-A revolution is the result of the decision of people to riot given their angriness level caused by the macro-conditions.
+Similarly, a revolution is the result of the decision of people to riot given their angriness level caused by the macro-conditions.
 While apparently coherent, this reasoning has two main flaws, 
 Firstly, it obviates the link from (D) to (A). 
 The origin of capitalism was a process that lasted decades, 
