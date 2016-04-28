@@ -7,7 +7,7 @@ however, this alternative is clearly not feasible for large social structures''
 --- M.P. Allen, 1974
 \end{flushright}
 
-\subsection{Data description}
+\subsection{Company data}
 The data from this project was extracted from Orbis~\footnote{\url{orbis.bvdinfo.com/}}.
 Orbis contains standardized information from 200 million firms and 100 million people. 
 The firm data includes economic indicators (such as turnover, employee number, profit ratios or economic activity using the standard NACE rev. 2),
@@ -47,6 +47,21 @@ This assessment will determine to what extent our results are generalizable.
 \end{center}
 \end{figure}
 
+
+
+\subsection{City data}
+The OECD (\url{https://stats.oecd.org/Index.aspx?DataSetCode=CITIES}) recopilates data at the metropolitan area level on population, GDP, polution, unemployment rates, number of patents, and geographic and administrative forms.
+Moreover, at the regional level, 
+the OECD provices on education, R&D, type of emplotment (business) and education.
+External databases, such as the Innovation Cities index ~\url{http://www.innovation-cities.com/innovation-cities-index-2015-global/9609} provides further information on innovation.
+Poverty, health and other indicators can be obtained from UN-Data (see for exmaple \url{http://www.statsilk.com/open-data/sources-global-open-data-national-regional-and-city-levels-links-public-databases} or UN-Habitat (\url{http://unhabitat.org/}.\cite{leautier2006cities}).
+
+Two limitations of the data are that only the largest cities are included in the databases, 
+and that not every indicator is available for the same cities.
+Because of these limitations, the analysis linking diffusion in the product-service to interlocks will need to focus on the top 1000 cities worldwide.
+
+
+\iffalse
 \subsection{Data bias}
 We position ourselves very far from the data. 
 Given the scope of the project (study the role of interlocks globally) this is the only viable solution.  
@@ -109,5 +124,5 @@ However it is not clear that formal interlocks -- those occurring by people sitt
 are more important than interlocks created by directors being part of the same social clubs or the same families. 
 By restricting ourselves to formal interlocks we may be missing an important part of the corporate network. 
 However, we expect to capture a significant part of the relations between companies.
-
+\fi
  

@@ -8,50 +8,49 @@ Warning--entry type for "Note1" isn't style-file defined
 Warning--entry type for "Note2" isn't style-file defined
 --line 2 of file 8mp-revtex4Notes.bib
 Database file #2: 8mp.bib
-Warning--I'm ignoring watts2007's extra "title" field
---line 154 of file 8mp.bib
 Warning--can't use both volume and number fields in jeidels1905
-Warning--empty journal in weber1904
+Warning--empty journal in Peng2016
 Warning--empty journal in Belderbos2014
-You've used 34 entries,
+Warning--empty journal in weber1904
+You've used 45 entries,
             1795 wiz_defined-function locations,
-            664 strings with 8061 characters,
-and the built_in function-call counts, 6896 in all, are:
-= -- 631
-> -- 239
-< -- 4
-+ -- 97
-- -- 63
-* -- 435
-:= -- 1075
-add.period$ -- 98
-call.type$ -- 34
-change.case$ -- 24
+            727 strings with 9909 characters,
+and the built_in function-call counts, 9274 in all, are:
+= -- 855
+> -- 326
+< -- 5
++ -- 131
+- -- 86
+* -- 583
+:= -- 1443
+add.period$ -- 131
+call.type$ -- 45
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 317
-empty$ -- 725
-format.name$ -- 63
-if$ -- 1530
+cite$ -- 49
+duplicate$ -- 427
+empty$ -- 969
+format.name$ -- 86
+if$ -- 2063
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 40
-newline$ -- 169
-num.names$ -- 32
-pop$ -- 112
+int.to.str$ -- 45
+missing$ -- 54
+newline$ -- 224
+num.names$ -- 43
+pop$ -- 152
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 133
+skip$ -- 175
 stack$ -- 0
-substring$ -- 487
-swap$ -- 51
-text.length$ -- 4
+substring$ -- 660
+swap$ -- 69
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 70
-width$ -- 36
-write$ -- 352
+warning$ -- 4
+while$ -- 96
+width$ -- 47
+write$ -- 468
 (There were 6 warnings)

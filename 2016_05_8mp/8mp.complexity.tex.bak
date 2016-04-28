@@ -17,7 +17,7 @@
 \subsection{Complex systems}
 \label{sec:characteristics}
 %“Summary: What are complex systems”
-Complex systems are those where many similar parts interact with each other using simple rules to create the whole,
+Complex systems are those where many parts interact with each other using simple rules to create the whole,
 which exhibit characteristics different than the parts --
 ``more is different''~\citep{anderson1972}.
 Complex systems contrast with complicated systems, where many different parts with defined roles are put together to create the system. 
@@ -27,12 +27,13 @@ Complex systems, such as bird flocks, cannot be studying by analyzing only the c
 but the interactions among them are also needed.  
 Although a consensus definition of complex system does not yet exist, a complex system is characterized by the following attributes. 
 (i) Multi-scale: Many individual parts interact to create the whole. 
-(ii) Networks: The individuals usually interact only with a few other individuals, creating a network of interactions. For social systems, the networks created are ``small-world'' networks, where the distance between two random people in a network is small.  
+(ii) Networks: The individuals usually interact only with a few other individuals. Thus, the system can be represented by networks of interactions. For social systems, the networks are ``small-world'' networks, where the distance between two random people is small.  
 (iii) Emergent properties: The whole has properties that none of the individuals have. 
 (iv) Spontaneous order. There is not a global organizer of the system. For instance, the collective behavior of flocks is an emergent property of the interaction between birds. 
 (v) Memory: The individuals remember previous interactions. 
 (vi) Feedback loops: The interaction between two individuals affect other individuals in the system. For example the decision of a bird to turn affect the probability that other birds turn as well, which affect the probability that the first bird keep turning.
-(vii) Stochasticity: The system lives in a noisy environment. 
+(vii) Stochasticity: The actions and interactions of the agents are probabilistic, 
+and subject to a noisy environment.
 (viii) Steady-states are far from equilibrium. Complex systems are usually in a steady-state (except during transition times). However, since they depends on active interactions between people, they stay far from the equilibrium. If no energy is added to the system, the system disappears.
 (ix) Non-linearity, cascading and hysteresis. The interactions are non additive. In a standing ovation, the addition of a new person standing can produce a cascade of events, resulting on a general standing ovation.
 (x) Robustness to random failures. The system is highly resistant to the failure of one of the individuals. 
@@ -138,7 +139,7 @@ Our view of the process, using Granovetter model as an example, is summarized in
 In Granovetter example there are some specific macro-conditions at time zero, 
 such as a level of hunger, a level of police reprisal, or a sense of collective.
 Moreover, no people are rioting ($\Phi_0 = 0$, where $\Phi_0$ is the percentage of the population rioting at time 0). 
-Given the micro-conditions, a few people ($x$) with threshold zero ($\phi_i = 0 \geq Phi_0$) -- very prone to riot -- make the individual decision to riot (micro-outcome). 
+Given the micro-conditions, a few people ($x$) with threshold zero ($\phi_i = 0 \geq \Phi_0$) -- very prone to riot -- make the individual decision to riot (micro-outcome). 
 The macro-outcome is that a group of people are rioting. 
 This affects the macro-conditions ($\Phi_1 = x$). 
 The micro-conditions in Granovetter model are fixed (constant thresholds, although this is a simplification).
@@ -299,11 +300,11 @@ If you are interested on modeling smoking behavior in high schools,
 an agent-based model that includes selection and influence terms may be more appropriate~\citep{Mercken2010}.
 
 
-In political sciences, such models have been successfully applied to understand the spreading of ideas [refs], %(contagion such as granovveter, Generalized contagion models (Dodds and Wattas 2004,2005): memory of exposure to a contagious entity (e.g. a rumor or disease), variable magnitudes of exposure (dose sizes), and heterogeneity in the susceptibility of individuals), 
-to understand the factors affecting polarization vs homogenization [refs],
-to find the micro-motives in the origin of inequality [ref], 
-show why coordination and collaboration emerge [ref],
-among others [refs]. 
+In political sciences, such models have been successfully applied to understand the spreading of ideas~\citep{rosenquist2010spread}, %(contagion such as granovveter, Generalized contagion models (Dodds and Wattas 2004,2005): memory of exposure to a contagious entity (e.g. a rumor or disease), variable magnitudes of exposure (dose sizes), and heterogeneity in the susceptibility of individuals), 
+to understand the factors affecting polarization vs homogenization~\citep{macy2003polarization},
+to find the micro-motives in the origin of inequality~\cite{Clauset2015}, 
+show why coordination and collaboration emerge~\citep{thompson1991markets},
+among others. 
 In general, modeling allows us to find and quantify which micro and macro-conditions are associated to the macro-outcomes observed.
 
 
@@ -342,7 +343,7 @@ In general, modeling allows us to find and quantify which micro and macro-condit
 %pN,i log pN,i
 
 
-\subsubsection{Prediction (to be written)}
+%\subsubsection{Prediction (to be written)}
 %Modeling alone . 
 
 %For this reason, prediction capabilities are often required.
@@ -352,17 +353,17 @@ In general, modeling allows us to find and quantify which micro and macro-condit
 %null models
 
 %Epstein reference
-\lipsum[1-2]
+%\lipsum[1-2]
 
 
 \subsection{Summing up}
 Social science systems are often embedded in complex networks of interconnected agents, 
 where the action of an agent affect the actions of the others in a non-linear fashion.
+Thus, standard statistics are often misleading.
 With the advances in technology, 
 we are for the first time able to gather large datasets of social systems.
 Data availability has come together intensive research in the area of complex systems,
 and we can now use formal models to describe, explain and predict these challenging structures.
-
 Let's finish with an extract from Duncan J. Watts's `The Collective Dynamics of Belief': \textit{``When collective behavior is generated from individual behavior via a nonlinear, stochastic aggregation process, it simply is not `explainable' in the usual way of `A caused B'. Once they have taken place, however, collective outcomes—even those that are highly counterintuitive and unpredictable--can always be rationalized. Some story can always be told, no matter how complicated, that traces a path from some initial state A to some final state B, and thus sounds like a causal story.
 [...]
 But these descriptions are necessarily statistical in nature, comprising, for example, descriptions of probability distributions, rather than descriptions of particular outcomes. 
