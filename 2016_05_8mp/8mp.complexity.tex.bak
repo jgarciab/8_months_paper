@@ -1,10 +1,4 @@
-\begin{figure*}
-\begin{center}
-\includegraphics[width=.65\textwidth]{fig1.png}
-\end{center}
-\caption{Global network of interlocking directorates. Color indicates communities -- i.e. cities that do business together within each other more often than with others.}
-\label{fig:fig1}
-\end{figure*}
+
 
 \section{Complexity theory}
 \label{sec:complexity}

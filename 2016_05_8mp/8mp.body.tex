@@ -39,14 +39,13 @@ For example,
 Peng et al.~\citep{Peng2016}, using a survey of 27 managers from 20 firms in a major industrial center in Jiangsu province (China), found that the presence of interlocks increases firm growth.
 At the same time,
 Non and Franses~\citep{franses2007interlocking}, using annual reports from the largest 101 Dutch companies, found that the presence of interlocks decreases firm performance.
-Recognizing that at the end it is people at companies that take can help bring insight.
+Recognizing that the system is multi-level (directors and companies) can help bring insight to this processes.
 For instance, we can assumme two types of ties director-firm. 
 The first type is status ties.
 People seek employment in companies that are rapidly growing,
-while companies that are rapidly growing seek people to expand.
+while companies that are rapidly growing seek new people to continue their expansion.
 The second type is monitoring ties.
-Companies that invested will demand to place one of their own directors in big companies that are doing badly,
-while directors will try to leave companies underperforming.
+Companies that invested heavily in company A will demand to place one of their own directors on A's board in order to monitor its activity.
 The result of this model is an inverse U-shaped relationship between firm performance and number of interlocks.
 Moreover, this model can be directly tested linking monitoring ties to interlocks with an ownership relationship between companies, 
 and status ties to interlocks without ownership relationships.
@@ -59,7 +58,7 @@ and status ties to interlocks without ownership relationships.
 %This model would explain why researchers [refs] have found positive and negative relationship between interlocks and performance,
 
 
-Here, we study a large dataset comprising 200 million companies and 100 million directors (see \ref{sec:data}) to bring definitive answers to the field .
+Here, we study a large dataset comprising 200 million companies and 100 million directors (see \ref{sec:data}) to bring definitive answers to the field.
 Our main research question is ``How is the network of interlocking directorates structured in time and space, and what is its effect on structural transformation?''.
 For the sake of brevity, we focus here on the second part of the question ``what is the effect of interlocks on structural transformation'',
 where structural transformation corresponds to the evolution of the distribution of economic activities within the city.
@@ -70,8 +69,8 @@ Section \ref{sec:factors} shows what factors influence the presence of interlock
 Our unit of analysis can be the company itself, the city, the country or the region. 
 Although the analysis will be done at multiple scales,
 we will focus on the city level for the rest of the manuscript.
-The focus at the city level allow us to link our research to both the existing literature on cities as engines of technological growth (see for example ~\citep{Belderbos2014}),
-and to existing databases on human and economic capital not available at a lower scale.
+The focus at the city level allows us to link our research to both the existing literature on cities as engines of technological growth (see for example ~\citep{Belderbos2014}),
+and to existing databases on human and economic capital.
 
 
 \subsection{Product-service space}
@@ -86,7 +85,7 @@ Moreover, the products that are developed depend on the current products being p
 Many explanation have been proposed for this, 
 such as similar institutions, infrastructure, physical factors, technology, or some combination of those factors (see~\cite{hidalgo2007} for a review).
 To reconcile previous research without abstracting from the products,
-Hidalgo, Hausmann and Klinger~\cite{hidalgo2007, hausmann2011, Hausmann2006,hidalgo2009} assume that related products require similar underlying factors (`capabilities').
+Hidalgo, Hausmann and Klinger~\cite{hidalgo2007, hausmann2011, Hausmann2006,hidalgo2009} assumed that related products require similar underlying factors (`capabilities').
 They next developed the `product space' as a map of the relatedness between products,
 where products are related if countries have competitive advantages respect to both products.
 They showed that the product space capture information about the set of capabilities available in a country, 
@@ -135,11 +134,11 @@ we expect a relationship between the product-service space and the number of int
 However it is not clear if interlocks are only a cause of development but also an effect.
 Interlocks provide a communication channel between companies, 
 and serve as a link for the spread of strategies and structures.
-For instance, acquisition behaviours in one company are imitated by companies linked by interlocks~\citep{Haunschild1993},
-the spread of poison pills (securities that give target shareholders the right to buy shares at a 50\% discunt in the case of hostile takeovers) increased from 5\% to 35\% adoption in 1987 through interlock and ownership links~\cite{Davis1997,Davis1991}, 
-companies linked by interlocks move together to new stock markets ~\citep{Rao1999}.
+For instance, acquisition behaviours in one company are imitated by companies linked by interlocks~\citep{Haunschild1993}.
+The spread of poison pills (securities that give target shareholders the right to buy shares at a 50\% discount in the case of hostile takeovers) increased from 5\% to 35\% adoption in 1987 through interlock and ownership links~\cite{Davis1997,Davis1991}. 
+Similarly, companies linked by interlocks move together to new stock markets~\citep{Rao1999}.
 We hypothesize that interlocks serve as a communication channel between companies,
-which allows for the spread of opportunity business and collaboration,
+which allows for the spread of business opportunity and collaboration,
 thus increasing investment and R\&D fund to promising sectors (those close in the product-service space).
 Moreover, increased investment and innovation has been linked to economic development~\citep{Romer1991,grossman1991,hidalgo2007}.
 In a first step, we will test if interlocks affect the diffusion process in the product-service space,
@@ -183,7 +182,7 @@ H(Companies_{t+1}|Companies_{t},Interlocks_{t}) \\
 Other methods include using generative models such as ERGMs~\citep{robins2007introduction} or SIENA~\citep{snijders2008introduction} to assess if the presence of interlocks at time $t$ is predicted by $Companies_{t+1}$,
 better than for $Companies_{t}$.
 Such a models allow to control for node attributes (see below) and for recursive network effects 
--- e.g. the probability that there is an interlock A--C increases if there are interlocks A--B and B--C (transitivity), and should be controlled.
+-- e.g. the probability that there is an interlock A--C increases if there are interlocks A--B and B--C (transitivity).
 
 There are several problems with this approach.
 Firstly, we have explained that development creates interlocks (endogeneity problem).
@@ -207,7 +206,7 @@ Moreover, positive effects of interlocks in the diffusive process would imply th
 
 
 \subsubsection{Interlocks affect the product-service space (at least) through innovation}
-In section~\ref{sec:interlockspss}, we investigate if interlocks affect the diffusive process in the product-service space.
+In section~\ref{sec:interlockspss}, we investigated if interlocks affect the diffusive process in the product-service space.
 In this section, we hypothesize that the effect of interlocks in the diffusive process is caused at least partially by an improvement in collaboration and innovation.
 Innovation has been linked to gaining competitive advantage~\citep{Hitt1996}, expanding market share ~\citep{Franko1989} and increasing firm performance~\citep{Morbey1988}.
 Thus, a correlation in section~\ref{sec:pss} between the product-service space and innovation would not be surprising. 
